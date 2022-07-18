@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 neww
+=======
+checkkk
+>>>>>>> 537defffe4bdac2f6d2cf9dc1871247607a9fdb6
