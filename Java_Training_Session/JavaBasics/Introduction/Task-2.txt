@@ -1,0 +1,22 @@
+1. Remove static keyword :- 
+After removing static keyword from the program it gets compiled successfully. But thows error at runtime as main method should be static so that the compiler do not need to create 
+a new object and the main method could be called with the help of class name .
+
+2. Remove public keyword :-
+After removing public keyword the program gets compiled sucessfully. But it throws an error at run time that main method not found. It throws this error as at compile time by default the 
+interpreter searches for a main method which is public.
+
+3. Remove void keyword:- 	
+ When we remove void from the main method it does not gets compiled as a method needs to have a return type. It shows invalid method declaration error.
+
+4. Remove Semicolon :-
+After removing semicolon program throws compile time error. This happened because Semicolon is a part of syntax in Java. It shows the compiler where an instruction ends and where the 
+next instruction begins. 
+
+5.Remove System:- 
+After removing system program throws compile time error. It points at out and says cannot find symbol.
+
+6. Remove class keyword :- 
+After removing class program throws an compile time error. Without the keyword class in the class definition the compiler won't identify it as a class.
+
+When file name and public class name are different in java the program throws an compile time error. The error states that the public class name should be same as the file name.
