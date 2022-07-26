@@ -1,6 +1,7 @@
 public class Students{
     int rollnumber,marks1,marks2,marks3,total,avg;
     String name,course;
+    char grade;
     public void setRollnumber(int rollnumber){
         this.rollnumber=rollnumber;
 
@@ -54,26 +55,38 @@ public class Students{
         System.out.println(total);
         return total;
     }
-    public void calculateAverage(int total){
+    public int calculateAverage(int total){
         avg=total/3;
+        return avg;
     }
-    public void calculateGrade(int avg){
+    public char calculateGrade(int avg){
+        System.out.println(avg);
         if(avg>80 && avg<=100){
-            System.out.println("A");
+            grade ='A';
+            return grade;
         }
         else if(avg>60 && avg<=80){
-            System.out.println("B");
+            grade='B';
+            return grade;
+         
         }
         else if(avg>40 && avg<=60){
-            System.out.println("C");
+            grade='C';
+            return grade;
+        }
+        else if(avg>20 && avg<=40){
+            grade='D';
+            return grade;
         }
         else{
-            System.out.println("FAIL");
+            grade='F';
+            return grade;
+            
         }
         
     }
     public String toString(){
-        return name+ "rollnumber is " + rollnumber+ " and total is " +total+ "and average is " +avg ;
+        return name+ "rollnumber is " + rollnumber+ " and total is " +total+ "and average is " +avg + "and grade is " +grade;
     }
 
 }
