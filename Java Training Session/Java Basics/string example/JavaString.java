@@ -2,7 +2,7 @@ package string example;
 
 import java.util.*;
 //This program is for Returning char index
-public class Java_String {
+public class JavaString {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number between 1 to 10 to run a Program");
