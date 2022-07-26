@@ -1,5 +1,4 @@
 
-import java.lang.*;
 
 class Student{
     private int rollNumber;

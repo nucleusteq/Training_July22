@@ -1,5 +1,3 @@
-import javax.sound.midi.Soundbank;
-
 class Product{  
 	static float price=5;
 	static{
