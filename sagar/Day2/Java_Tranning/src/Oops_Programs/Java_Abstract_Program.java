@@ -48,11 +48,11 @@ public class Java_Abstract_Program {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 circle r1 = new circle();
-	        r1.perimeter();
+	        r1.perimeter_method();
 	        r1.area_method();
 	        rectangle r = new rectangle();
-	        r.perimeter();
-	        r.area();
+	        r.perimeter_method();
+	        r.area_method();
 	}
 
 }
