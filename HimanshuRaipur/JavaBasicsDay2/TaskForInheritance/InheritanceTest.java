@@ -97,15 +97,15 @@ class LoanAccount extends Account{
 
 public class Test{
 	public static void main(String[] args){
-		Account account=new Account(14562545,"Manav Jindal","xyz-gandhi nagar","02/02/2000",5000);
+		Account account=new Account(5436378,"Himanshu Dhoke","vishal Nagar","08/10/1996",10000);
 		SavingsAccount savingsAccount=new SavingsAccount();
 		System.out.println(account.getBalance());
-		savingsAccount.withdrawMoney(1000,account);
+		savingsAccount.withdrawMoney(5000,account);
 		System.out.println(account.getBalance());
 
 
 		System.out.println("Balance Before Money Deposit: "+account.getBalance());
-		savingsAccount.depositMoney(300,account);
+		savingsAccount.depositMoney(3000,account);
 		System.out.println("Balance After Money Deposit: "+account.getBalance());
 
 		savingsAccount.fixedDeposit();
