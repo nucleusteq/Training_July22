@@ -98,7 +98,7 @@ class LoanAccount extends Account{
 
 public class bank{
 	public static void main(String[] args){
-		Account account=new Account(14562545,"Manav Jindal","xyz-gandhi nagar","02/02/2000",5000);
+		Account account=new Account(12145454,"Shantanu Kale","mhownaka","10/10/1999",10000);
 		SavingsAccount savingsAccount=new SavingsAccount();
 		System.out.println(account.getBalance());
 		savingsAccount.withdrawMoney(1000,account);
