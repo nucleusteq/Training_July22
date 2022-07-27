@@ -1,4 +1,4 @@
-package JavaTrainingSession.Abstract;
+package JavaTrainingSession.JavaAbstract;
 class Cicle{  
 	final double area(double rad){
 		final double PI = 3.14;

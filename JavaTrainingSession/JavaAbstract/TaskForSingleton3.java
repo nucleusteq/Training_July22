@@ -1,4 +1,4 @@
-package JavaTrainingSession.Abstract;
+package JavaTrainingSession.JavaAbstract;
 class Product{  
 	static float price=5;
 	static{

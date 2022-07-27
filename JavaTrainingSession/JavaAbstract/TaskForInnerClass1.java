@@ -1,4 +1,4 @@
-package JavaTrainingSession.Abstract;
+package JavaTrainingSession.JavaAbstract;
 class Bike{
     class Hero{
         void display(){

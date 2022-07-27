@@ -1,4 +1,4 @@
-package JavaTrainingSession.Abstract;
+package JavaTrainingSession.JavaAbstract;
 
 class Student{
     private int rollNumber;

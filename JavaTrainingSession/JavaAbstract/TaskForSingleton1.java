@@ -1,4 +1,4 @@
-package JavaTrainingSession.Abstract;
+package JavaTrainingSession.JavaAbstract;
 class School{
 	private static School school_obj =null;
 	private int boys,girls,workers,teachers;

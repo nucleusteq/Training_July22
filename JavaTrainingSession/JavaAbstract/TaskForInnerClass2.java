@@ -1,4 +1,4 @@
-package JavaTrainingSession.Abstract;
+package JavaTrainingSession.JavaAbstract;
 abstract class BikeClass{  
     abstract void display();  
   }  
