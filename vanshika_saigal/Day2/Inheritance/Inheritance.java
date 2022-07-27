@@ -97,7 +97,7 @@ class LoanAccount extends Account{
 
 public class Inheritance{
 	public static void main(String[] args){
-		Account account=new Account(14562545,"Manav Jindal","xyz-gandhi nagar","02/02/2000",5000);
+		Account account=new Account(14562545,"VANSHIKA","nehru nagar","08/09/1999",57000);
 		SavingsAccount savingsAccount=new SavingsAccount();
 		System.out.println(account.getBalance());
 		savingsAccount.withdrawMoney(1000,account);
