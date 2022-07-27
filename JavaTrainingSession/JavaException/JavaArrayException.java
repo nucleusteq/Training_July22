@@ -1,7 +1,7 @@
 package JavaTrainingSession.JavaException;
 import java.util.Scanner;
-public class JavaArrayExc {
-    public static void main(String[] args) {
+public class JavaArrayException {
+    public static void main(String[] args){
         int n,ind1,ind2;
         int div = 0;
         Scanner sc=new Scanner(System.in);
