@@ -9,7 +9,7 @@ public class Student{
 	private int marks3;
 	private char grade;
 
-	Student(){
+	public Student(){
 
 	}
 	public Student(int rollNumber,String name,String course,int marks1,int marks2,int marks3){
@@ -102,6 +102,16 @@ public class Student{
 		else{
 			return 'F';
 		}
+	}
+
+	public Student getStudentFromRollNumber(Student students[],int rollNumber){
+		Student student=null;
+		for(Student s:students){
+			if(s.getRollNumber() == rollNumber){
+				student=s;
+			}
+		}
+		return student;
 	}
 
 	public String toString(){
