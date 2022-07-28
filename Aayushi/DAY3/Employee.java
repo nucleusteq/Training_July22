@@ -27,6 +27,8 @@ public class Employee {
 		
 		
 	        System.out.println("field type: " +"\t" + employeefield.type()  );
+	        System.out.println("field isPrimarykey: " +"\t" + employeefield.isPrimaryKey()  );
+	        
 	       }
 		System.out.println();
 		
