@@ -1,21 +1,38 @@
 import java.lang.module.ModuleDescriptor.Modifier;
 import java.lang.reflect.Field;
 
+
 public class Employee {
-public static void main(String args[]) {
-	EmployeeDetails emp1 = new EmployeeDetails();
-	emp1.setName("kiran"); 
-	emp1.setEmId(3);
-	emp1.setDepartment("Technical");
-	emp1.setEmail("employee3@gmail.com");
-	emp1.getEmpId(); 
-	Field[] fields;
-//	for (Field field : fields) {
-//        System.out.printf("%s %s %s%n",
-//            
-//            field.getName().getSimpleName(),
-//            field.getName()
-//        );
-//	 System.out.println("field name:"+name);
-}
-}
+
+
+	public static void main(String[] args) throws Exception {
+	
+		System.out.println();
+		
+		EmployeeDetails ed= new EmployeeDetails();
+		ed.setName("kiran");
+		ed.setEmId(3);
+		ed.setDepartment("tech");
+		ed.setEmail("aayushi.com");
+		
+		for( Field field: ed.getClass().getDeclaredFields())
+		{
+		EmployeeField employeefield  = field.getAnnotation(EmployeeField.class);
+		System.out.println("field name" + "\t" + employeefield.name() );
+		
+		
+		field.setAccessible(true);
+		Object value = field.get(ed);
+		System.out.println("field value"+ "\t" + value);
+		
+		
+	        System.out.println("field type: " +"\t" + employeefield.type()  );
+	        System.out.println("field isPrimarykey: " +"\t" + employeefield.isPrimaryKey()  );
+	        
+	       }
+		System.out.println();
+		
+	}
+
+
+	}
