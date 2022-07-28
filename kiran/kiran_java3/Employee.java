@@ -13,7 +13,7 @@ public class Employee {
 		ed.setName("kiran");
 		ed.setEmId(3);
 		ed.setDepartment("tech");
-		ed.setEmail("aayushi.com");
+		ed.setEmail("kiran.com");
 		
 		for( Field field: ed.getClass().getDeclaredFields())
 		{
