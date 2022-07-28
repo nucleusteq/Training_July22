@@ -17,16 +17,16 @@ import java.lang.reflect.Field;
 
 //This is Pojo class
 class EmployeeDetails{
-	@EmployeeField(name="Emp_Id",type=String.class,isPrimaryKey=false)
+	@EmployeeField(name="Emp_Id",type=String.class,isPrimaryKey=true)
 	private String Emp_Id;
 	
-	@EmployeeField(name="Emp_Email",type=String.class,isPrimaryKey=true)
+	@EmployeeField(name="Emp_Email",type=String.class,isPrimaryKey=false)
 	private String Emp_Email;
 	
-	@EmployeeField(name="Emp_Email",type=String.class,isPrimaryKey=false)
+	@EmployeeField(name="Emp_Name",type=String.class,isPrimaryKey=false)
 	private String Emp_Name;
 	
-	@EmployeeField(name="Emp_Department",type=String.class,isPrimaryKey=false)
+	@EmployeeField(name="Emp_Department",type=String.class,isPrimaryKey=true)
 	private String Emp_Department;
 
 	public String getEmp_Id() {
@@ -78,9 +78,12 @@ public class Employee_Main_Annotaion {
 		 
 		 for (Field f:emp_details.getClass().getDeclaredFields()) {
 			 EmployeeField column = f.getAnnotation(EmployeeField.class);
+			
 			   if (column != null) {
+				   f.setAccessible(true);
+				   Object obj = f.get(emp_details);
 				   System.out.println("field name "+ column.name());	
-					 System.out.println("field value "+column );
+					 System.out.println("field value "+obj );
 					 System.out.println("field type "+ column.type());
 					 System.out.println("field isPrimaryKey "+ column.isPrimaryKey());
 					 System.out.println();
