@@ -10,10 +10,10 @@ public class Employee {
 		System.out.println();
 		
 		EmployeeDetails ed= new EmployeeDetails();
-		ed.setName("kiran");
+		ed.setName("Kiran");
 		ed.setEmId(3);
 		ed.setDepartment("tech");
-		ed.setEmail("kiran.com");
+		ed.setEmail("Kiran.com");
 		
 		for( Field field: ed.getClass().getDeclaredFields())
 		{
