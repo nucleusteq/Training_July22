@@ -45,7 +45,7 @@ public class MultiThreadMain123 {
 	public static void main(String[] args) {
 		int n;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter any Integer - ");
+		System.out.println("Enter any Integer to get 3 outputs in separate threads- ");
 		n=sc.nextInt();
 		
 		FiboThread man1 = new FiboThread(n);
