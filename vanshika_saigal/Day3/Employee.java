@@ -27,4 +27,7 @@ public static void main(String args[])throws Exception { {
 	
 }
 }}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2481e7be7de025e076a5ec45f8f1382d0b0eb839
