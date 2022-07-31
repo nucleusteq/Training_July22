@@ -6,6 +6,7 @@ class Normal extends Thread{
 	public void run()
 	{	
 		System.out.println("Thread run method!"+Thread.currentThread().getName());
+				
 	}
 }
 

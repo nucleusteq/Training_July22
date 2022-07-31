@@ -50,15 +50,18 @@ public class MultiThreadMain123 {
 		
 		FiboThread man1 = new FiboThread(n);
 		man1.setPriority(Thread.MAX_PRIORITY);
-		System.out.println(man1.getPriority());
+		man1.setName("Fibo Thread");
+		System.out.println("\nPirority of thread "+man1.getName()+" : "+man1.getPriority());
 		
 		ReverseThread man2 = new ReverseThread(n);
 		man2.setPriority(Thread.NORM_PRIORITY);
-		System.out.println(man2.getPriority());
+		man2.setName("Reverse Thread");
+		System.out.println("Pirority of thread "+man2.getName()+" : "+man2.getPriority());
 		
 		SumThread  man3 = new SumThread(n);
 		man3.setPriority(Thread.MIN_PRIORITY);
-		System.out.println(man3.getPriority());
+		man3.setName("Sum Thread");
+		System.out.println("Pirority of thread "+man3.getName()+" : "+man3.getPriority());
 		
 		man1.start();
 		man2.start();
