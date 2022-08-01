@@ -1,0 +1,71 @@
+1.1 chmod o+rw financial_report.txt
+
+1.4 
+
+rw-: user has read and write permission for accessing the financial_report.txt
+r--: group has only read permission for accessing financial_report.txt
+r-x: others can read and execute the financial_report.txt
+d: indicates finance is a directory 
+rwx: user has read write and execute permission for finance directory
+r--: group has read permission for finance directory
+rwx: others have all permisions for finance directory.
+
+1.5
+ 
+777- readable, writable and executable by all users, group and others.
+647- readable and writeable for user, readable for group, and readable, writteable, and executeable for others.
+660- readable and writeable for user and group. Others do not have any permissions. 
+475- readable for user, readable, writeable, and executeable for group, and readable and executeable for others.   -r--rwxr-x
+
+1.6   change directory: cd directory_name
+      remove file: rm filename 
+      remove directory: rm -d directory_name(for empty directory)   or   rm -r directory_name(for non-empty directory)
+
+
+2.1 Write a command to create a branch which have all changes from main.
+
+
+git pull
+git chechout -b BranchJohn
+git status
+git add .
+git commit -m "message"
+git push -u origin BranchJohn
+git checkout main
+git pull
+git merge BranchJohn
+git push origin main
+
+2.2 
+
+git pull
+git chechout -b BranchAditya
+git status
+git add .
+git commit -m "message"
+git push -u origin BranchAditya
+git checkout main
+git pull
+git merge BranchAditya
+git push origin main
+
+2.3
+
+// This is a merge conflict.
+ git log --merge 
+  The git log --merge command produces the list of commits that are causing the conflict
+
+2.4
+
+//manually fix the conflict in the file application.java
+
+git add application.java
+git commit -m "message"
+git push origin main
+
+//
+method to resolve the conflict: 
+git merge --abort
+
+
+
