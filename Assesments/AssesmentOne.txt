@@ -10,7 +10,7 @@ Ans : - cat financial_report.txt //read the file
         ESC :qw! //save the file
 
 1.3 After the sales department people update the file, this file needs to be shared with a vendor (some other company) for analysis of its data. How Rahul will share this file with the other company over the network. Explain what tool/app will be used here and the command that is required to share the file. The details of the other company's system are - user: other_company_user IP: 10.23.43.242.
-Ans : -
+Ans : -   scp <financial_report.txt> <username> @<system_ip> :/home/rahul /financial_report.txt
 
 1.4 What does the permission ring specify for the below files? Please explain each character of the permission ring.
 -rw-r--r-x    1 rahul finance 2345 Jul 27 12:94 financial_report.txt
@@ -31,6 +31,9 @@ x - Allows a execution of file.
 
 1.6 What are the command used for the below operations in Linux, also provide the syntax for the same.
 change directory, remove file and directory, rename file and directory
+Ans :- change directory - cd directory name
+      remove file - rm filename
+      rename file and directory - rmdir
 
 
 2. GIT 
