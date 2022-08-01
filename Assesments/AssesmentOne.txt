@@ -38,12 +38,12 @@ John and Aditya Working in main branch of GIT repo. John creates a new branch fo
 2.1 Write a command to create a branch which have all changes from main.
 Ans  :- git branch YourBranchName 
         for Eg :- git branch Jhon 
-		          git branch Aditya
 		for change branch use :- git checkout BranchName		
 				  
 
 Similarly, Aditya also works on a new feature, and he creates a new branch from main. Both were working in a different branch. Aditya has to push its changes to main branch via Pull request.
 2.2 Help Aditya to push its changes on main branch via pull request. Write all steps so code changes can go in main.
+Ans :-   git pull origin master 
 
 Now after some time John also have to commit its changes to main branch and he also has to push his changes to main. But when he was creating a PR, so he found that there was a Java class application.java
 has a conflict with the code that Aditya has pushed to main.
