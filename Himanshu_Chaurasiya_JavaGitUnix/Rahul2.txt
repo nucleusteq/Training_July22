@@ -1,0 +1,7 @@
+
+1. pwd -> to check the path of current directory
+2. cat financial_report.txt -> to read the content of the file.
+3. nano financial_report.txt -> to open the file in nano editor for modifying.
+4. Ctrl+s -> to save the content writter in the file.
+5. Ctrl+x -> to get exit from the editor.
+6. cat financial_report.txt -> to check the changes made in the file.
