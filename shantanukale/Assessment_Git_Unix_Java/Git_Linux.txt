@@ -1,0 +1,16 @@
+1.4
+-rw-r--r-x - read and write for user, read for groups, read and execute for others in regular file
+drwxr--rwx - read, write and execute for user, read for groups, read, write and execute for others in directory
+
+
+
+1.5
+777 - Read, write, execute for user, group and others.
+647 - Read and write for user, read for group and read, write, execute for others.
+660 - Read and Write for both user and groups, nothing for others.
+475 - Read for user, read, write and execute for groups and read and execute for others.
+
+1.6
+change directory - cd <new directory name>
+remove file and directory - rm -rf <directory  name>
+rename file and directory - mv <old name> <new name>
