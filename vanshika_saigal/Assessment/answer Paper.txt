@@ -1,0 +1,71 @@
+Questions Paper July-2022
+1. Linux
+1.1 Rahul is an employee of the finance department in the company ABC. In the company's system which is a Linux server (not any GUI Linux distro), Rahul is the owner of a file in his home directory /home/rahul/financial_report.txt. Few people from the sales department want to access and modify that file. How Rahul would make sure that people from another department will be able to read and modify the file. Also, provide the commands for the same if any needed.
+Answer:  chmod o+rw financial_report.txt
+
+
+1.2 Once Rahul does the needful to allow people from the sales department to read and modify the file. How the people from the sales department will read or edit the file. Also provide the tools/commands used for reading, modifying, and then saving the file.
+
+1.3 After the sales department people update the file, this file needs to be shared with a vendor (some other company) for analysis of its data. How Rahul will share this file with the other company over the network. Explain what tool/app will be used here and the command that is required to share the file. The details of the other company's system are - user: other_company_user IP: 10.23.43.242.
+
+1.4 What does the permission ring specify for the below files? Please explain each character of the permission ring.
+-rw-r--r-x    1 rahul finance 2345 Jul 27 12:94 financial_report.txt
+
+-:indicates financial_report.txt is a file 
+rw-: user is having read and write permission for accessing the financial_report.txt
+r--: group is having only read permission for accessing financial_report.txt
+r-x: others can read and execute the financial_report.txt
+
+drwxr--rwx 1 rahul finance 4096 Jul 27 10:94 finance
+d: indicates finance is a directory 
+rwx: user is having read write and execute permission for finance directory
+r--: group is having read permission for finance directory
+rwx: others are having all permisions for finance directory.
+
+1.5 Look at the below Octal number and explain what permission are they denoting
+777- it will be readable, writable and executable by all users, group and others.   -rwxrwxrwx
+647- it will be readable and writeable for user, readable for group, and readable, writteable, and executeable for others. -rw-r--rwx
+660- it will be readable and writeable for user and group. Others do not have any permissions.   -rw-rw----
+475- it will be readable for user, readable, writeable, and executeable for group, and readable and executeable for others.   -r--rwxr-x
+
+1.6 What are the command used for the below operations in Linux, also provide the syntax for the same.
+change directory, remove file and directory, rename file and directory
+change directory: cd directory_name
+remove file: rm filename 
+remove directory: rm -d directory_name(for empty directory)   or   rm -r directory_name(for non-empty directory)
+rename file:mv oldfilename newfilename
+rename directory: mv directoryname newdirectory_name
+
+2. GIT 
+John and Aditya Working in main branch of GIT repo. John creates a new branch for a new feature. 
+2.1 Write a command to create a branch which have all changes from main.
+git checkout -b feature/<newbranch>
+
+Similarly, Aditya also works on a new feature, and he creates a new branch from main. Both were working in a different branch. Aditya has to push its changes to main branch via Pull request.
+2.2 Help Aditya to push its changes on main branch via pull request. Write all steps so code changes can go in main.
+git checkout main
+git fetch origin main
+git rebase -i origin/main
+git push origin main
+
+Now after some time John also have to commit its changes to main branch and he also has to push his changes to main. But when he was creating a PR, so he found that there was a Java class application.java
+has a conflict with the code that Aditya has pushed to main.
+2.3 Help John by at least 2 ways to debug and get which has a conflict and what is the conflict.
+git add application.java
+git commit -m "message"
+git push origin main
+
+2.4 Help john also to resolve the conflict and push his changes to main. Write all steps so John and Aditya can work more collaboratively.
+git add application.java
+git commit -m "message"
+git push origin main
+method to resolve the conflict: git merge --abort
+
+3. Java :
+3.1 We have to design discount system for a retail chain, which provides services and sells pet products. It offers 3 types of memberships: Premium, Gold and Silver. Premium, gold and silver members receive a discount of 25%, 15%, and 8%, respectively, for all services provided. Customers without membership receive no discount. All members receive a flat 8% discount on products purchased. We have to design the classes which should at least 3 classes: Customers, Discounts and Visits. Designed classes should show below information:
+a. If classes are related so we have to show case the relationship.
+b. Classes should have member variables and methods to solve the above problem.
+c. Commit your class diagram/code to GIT to showcase above system design in the below git repo with your name as branch name: https://github.com/nucleusteq/Training_July22.git 
+
+3.2 We have to write a Java program to get the days pending to your birth date. Input will be your date and month of the birth and program will calculate how many days left to your birthday and commit your code onto git. 
+e.g. My birth day and month is 1 Sep and today date is 29 July. So, days to birthdate will be 33 days. 
