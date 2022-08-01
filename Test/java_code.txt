@@ -1,0 +1,34 @@
+
+public class Customers{
+double name;
+int total price;
+
+public String setmember(String setname)
+{
+    
+}
+}
+
+class Discounts extends Customers{
+
+
+if(membership==premium)
+{
+  total price = total price-(25% of the totoal price));
+}
+elseif(membership == gold){
+   total price = total price-(15% of the totoal price));
+}
+elseif(membership == Silver ){
+   total price = total price-(8% of the totoal price));
+}
+
+
+}
+
+class Visits extends Customers{
+
+public static void main(Strings args[]){
+
+}
+}
