@@ -1,0 +1,66 @@
+1.1 Rahul is an employee of the finance department in the company ABC. In the company's system which is a Linux server (not any GUI Linux distro), Rahul is the owner of a file in his home directory /home/rahul/financial_report.txt. Few people from the sales department want to access and modify that file. How Rahul would make sure that people from another department will be able to read and modify the file. Also, provide the commands for the same if any needed.
+chmod o+rw  financial_report.txt
+1.2 Once Rahul does the needful to allow people from the sales department to read and modify the file. How the people from the sales department will read or edit the file. Also provide the tools/commands used for reading, modifying, and then saving the file.
+
+1.3 After the sales department people update the file, this file needs to be shared with a vendor (some other company) for analysis of its data. How Rahul will share this file with the other company over the network. Explain what tool/app will be used here and the command that is required to share the file. The details of the other company's system are - user: other_company_user IP: 10.23.43.242.
+
+1.4 What does the permission ring specify for the below files? Please explain each character of the permission ring.
+-rw-r--r-x    1 rahul finance 2345 Jul 27 12:94 financial_report.txt - - indicate financial_report.txt is a file,user can read and write the txt,group can only read the text file,others can read and execute the text file
+drwxr--rwx 1 rahul finance 4096 Jul 27 10:94 finance - d indicates finance is a directory,user can read write and execute the directory,group can read the directory,others can read write and execute the directory
+
+1.5 Look at the below Octal number and explain what permission are they denoting
+777- readable,writable and executable by user,group and others.
+647-readable & writable by user,only readable by group,readable writable and executable by others.
+660-readable & writable by user and group,no permission for others
+475-readable by user,readble writable executable by group,readable executable by others.
+
+1.6 What are the command used for the below operations in Linux, also provide the syntax for the same.
+change directory, remove file and directory, rename file and directory
+ change directory- cd directory name
+remove file- rm filename
+remove directory- rm -r
+rename file and directory- mv filename
+
+2. GIT 
+John and Aditya Working in main branch of GIT repo. John creates a new branch for a new feature. 
+2.1 Write a command to create a branch which have all changes from main.
+git pull
+git checkout -b JohnBranch
+git status
+git add .
+git commit -m "done"
+git push -u origin
+git checkout main
+git pull git merge JohnBranch
+git push origin main
+
+Similarly, Aditya also works on a new feature, and he creates a new branch from main. Both were working in a different branch. Aditya has to push its changes to main branch via Pull request.
+2.2 Help Aditya to push its changes on main branch via pull request. Write all steps so code changes can go in main.
+git pull
+git checkout -b AdityaBranch
+git status
+git add .
+git commit -m "done"
+git push -u origin
+git checkout main
+git pull git merge AdityaBranch
+git push origin main
+
+
+
+
+Now after some time John also have to commit its changes to main branch and he also has to push his changes to main. But when he was creating a PR, so he found that there was a Java class application.java
+has a conflict with the code that Aditya has pushed to main.
+2.3 Help John by at least 2 ways to debug and get which has a conflict and what is the conflict.
+
+2.4 Help john also to resolve the conflict and push his changes to main. Write all steps so John and Aditya can work more collaboratively.
+
+
+3. Java :
+3.1 We have to design discount system for a retail chain, which provides services and sells pet products. It offers 3 types of memberships: Premium, Gold and Silver. Premium, gold and silver members receive a discount of 25%, 15%, and 8%, respectively, for all services provided. Customers without membership receive no discount. All members receive a flat 8% discount on products purchased. We have to design the classes which should at least 3 classes: Customers, Discounts and Visits. Designed classes should show below information:
+a. If classes are related so we have to show case the relationship.
+b. Classes should have member variables and methods to solve the above problem.
+c. Commit your class diagram/code to GIT to showcase above system design in the below git repo with your name as branch name: https://github.com/nucleusteq/Training_July22.git 
+
+3.2 We have to write a Java program to get the days pending to your birth date. Input will be your date and month of the birth and program will calculate how many days left to your birthday and commit your code onto git. 
+e.g. My birth day and month is 1 Sep and today date is 29 July. So, days to birthdate will be 33 days. 
