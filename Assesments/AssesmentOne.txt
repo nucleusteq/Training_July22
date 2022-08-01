@@ -1,10 +1,13 @@
 Questions Paper July-2022
 1. Linux
 1.1 Rahul is an employee of the finance department in the company ABC. In the company's system which is a Linux server (not any GUI Linux distro), Rahul is the owner of a file in his home directory /home/rahul/financial_report.txt. Few people from the sales department want to access and modify that file. How Rahul would make sure that people from another department will be able to read and modify the file. Also, provide the commands for the same if any needed.
-Ans : - 
+Ans : - sudo chown -R name(name of the person whom should we give access to)  /home/rahul/financial_report.txtxt
+      For giving read permissions & For modifying the command is- for giving Read Permmision that is -rw-rw----   this is only for group
 
 1.2 Once Rahul does the needful to allow people from the sales department to read and modify the file. How the people from the sales department will read or edit the file. Also provide the tools/commands used for reading, modifying, and then saving the file.
-Ans : -
+Ans : - cat financial_report.txt //read the file
+       for editing file open vim editor and make changes :- vim financial_report.txt //edit the file
+        ESC :qw! //save the file
 
 1.3 After the sales department people update the file, this file needs to be shared with a vendor (some other company) for analysis of its data. How Rahul will share this file with the other company over the network. Explain what tool/app will be used here and the command that is required to share the file. The details of the other company's system are - user: other_company_user IP: 10.23.43.242.
 Ans : -
@@ -33,6 +36,11 @@ change directory, remove file and directory, rename file and directory
 2. GIT 
 John and Aditya Working in main branch of GIT repo. John creates a new branch for a new feature. 
 2.1 Write a command to create a branch which have all changes from main.
+Ans  :- git branch YourBranchName 
+        for Eg :- git branch Jhon 
+		          git branch Aditya
+		for change branch use :- git checkout BranchName		
+				  
 
 Similarly, Aditya also works on a new feature, and he creates a new branch from main. Both were working in a different branch. Aditya has to push its changes to main branch via Pull request.
 2.2 Help Aditya to push its changes on main branch via pull request. Write all steps so code changes can go in main.
