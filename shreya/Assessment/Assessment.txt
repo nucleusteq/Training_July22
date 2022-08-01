@@ -1,0 +1,39 @@
+Linux 
+
+Ans 1.1.  For accessing, command is- 
+sudo chown -R  name(name of the person whom should we give access to)  /home/rahul/financial_report.txt 
+
+For giving read permissions & For modifying the command is-
+sudo chmod -R  ugo+r  financial_report.txt
+
+Ans 1.2.  To read the file- 
+cat  financial_report.txt
+to edit –
+vim financial_report.txt (it helps us to go inside the text editor and insert changes
+to save –
+esc :qw! (helps to save the changes)
+Ans 1.3- command is-
+scp <financial_report.txt> <user_name> @<system_ip> :/home/rahul /financial_report.txt
+Ans 1.4-
+-	:-Says it is file 
+-r w  :- says that  user has read and write permissions 
+-r :- says group has only read permission
+-r-x :- says others have read and execute permission
+1 – says it is applied on 1 file
+Rahul – is user name
+Finance- department name
+Jul – month 
+27 – date 
+12:94- time
+Financial_report.txt  - filename 
+
+
+Ans 1.5
+777- all can read/write/execute (full access)
+647-owner can read/write, group/others can read only
+660- owner can write and read the file
+475- Owner can read. Group can read, write and execute. Everyone can read and execute
+Ans 1.6-
+change directory- cd /[directory name]
+remove files and directory- rm [file/directory name]
+rename files and directory- rename 's/Directory1/Example_Directory/' *
