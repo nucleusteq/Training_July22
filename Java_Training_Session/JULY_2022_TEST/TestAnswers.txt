@@ -1,0 +1,59 @@
+1.
+1.1. To make sure that people from another department will be able to read and modify the file rahul will use the command chmod 760.
+1.2 We can read a file using cat filename.txt command to make changes to the file we can open an editor vi and the command is v filename.txt once we have made the changes we can save and exit the file using
+    :wq!
+
+1.3 To share this file with the other company over the network we will use secure shell hash communication protocol and the command used is ssh other_company_user@10.23.43.242.
+1.4 The permission ring specify for the below files is:
+    1.  -rw-r--r-x    1 rahul finance 2345 Jul 27 12:94 financial_report.txt:-
+	  1.1 1 means a file
+	  1.2 r means user is having read permission
+	  1.3 w means user is having write permission
+        1.4 - means user is not having execute permission
+        1.5 r means group is having read permission
+	  1.6	- means group is not having write permission
+        1.7	- means group is not having execute permission
+        1.8 r means other is having read permission.
+        1.9 - means other is not having write permission.
+	  1.10 x means other is having execute permission.
+
+   2. drwxr--rwx 1 rahul finance 4096 Jul 27 10:94 finance
+	1.1 d means a directory
+	  1.2 r means user is having read permission
+	  1.3 w means user is having write permission
+        1.4 x means user is having execute permission
+        1.5 r means group is having read permission
+	  1.6	- means group is not having write permission
+        1.7	- means group is not having execute permission
+        1.8 r means other is having read permission.
+        1.9 w means other is having write permission.
+	  1.10 x means other is having execute permission.
+
+1.5 The explaination about the permission denoted by the octal numbers are:
+    777:- Here 777 represents that it's giving permission to read, write and execute
+          permission to all the users, group and others.
+
+    647:- Here 6 means that user is having permission to read and write a file.
+	    Here 4 means that group is having only read permission. Whereas 7
+	    represents that other is having all the three read,write and execute permission.
+ 
+    660:- Here 6 means that user is having permission to read and write a file.
+	    Here 6 means that group is having permission to read and write a file.
+	    Here 0 means that group is neither given permission to read write and execute a file.
+
+    475:-  Here 4 means that user is having only read permission. 7 represents 
+           that group is having all the three permissions and 5 represents write and 
+           execute permission.
+
+1.6 The command used for the below operations in Linux are:-
+     1. change directory:- cd directoryname
+     2. remove file:- rm filename
+     3. remove directory:- rmdir
+     4. rename file and directory:- mv filename1 filename2
+
+2. Git
+
+2.1 Command to create a branch which have all changes from main is 
+    git checkout -b branchname
+2.2
+        	
