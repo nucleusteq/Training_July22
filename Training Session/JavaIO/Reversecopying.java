@@ -1,19 +1,25 @@
 package inputoutput.java.com;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 
 public class Reversecopying {
 	public static void main (String[] args) throws Exception {
 		FileReader fr = new FileReader("Text1.txt");
-		FileInputStream source = new FileInputStream("Text1.txt");
-		
+		FileReader myfile = new FileReader("Text1.txt");
+		BufferedReader fileread = new BufferedReader(myfile);
 		int countLines=0;
-		while(source.read()!= -1) {
-			countLines++;
-		}
+		String readline="";
+		do
+		{
+			readline = fileread.readLine();
+			if (readline != null)
+			{
+				countLines++;
+			}
+		} while (readline != null);
+		fileread.close();
 		String[] lines = new String[countLines];
 		countLines=0;
 		BufferedReader br = new BufferedReader(fr);
@@ -24,11 +30,10 @@ public class Reversecopying {
 				lines[countLines]= line;
 				countLines++;
 			}
-		}while(line !=null);
+		}while(line != null);
 		br.close();
-		source.close();
-		FileWriter fw = new FileWriter("Text3"+".tnv");
-		for (int i = lines.length-1; i>0; i--) {
+		FileWriter fw = new FileWriter("Text1"+".tnv");
+		for (int i = lines.length-1; i>=0; i--) {
 			fw.write(lines[i]+ System.lineSeparator());
 		}
 		fw.close();
