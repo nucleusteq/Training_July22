@@ -14,7 +14,7 @@ class Thread1f extends Thread{
 			System.out.println( " "+next);
 			
 		}
-	//	System.out.println("This is a fibonacci thread");
+	//  	System.out.println("This is a fibonacci thread");
 	}
 }
 class Thread2r extends Thread{
