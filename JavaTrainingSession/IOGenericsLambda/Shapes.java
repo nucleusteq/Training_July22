@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 interface shapeInterface{
 	
-	
 	final double PIE = 3.14;
 	final double r = 2;
 	final double b = 3;
@@ -74,6 +73,7 @@ class Calculate implements shapeInterface{
 }
 
 public class Shapes {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 				
 		Calculate cal  = new Calculate();
@@ -125,7 +125,7 @@ public class Shapes {
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + in);
 		}	
-
+		sc.close();
 	}	
 
 }

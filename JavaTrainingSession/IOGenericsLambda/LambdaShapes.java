@@ -2,8 +2,7 @@ package JavaTrainingSession.IOGenericsLambda;
 
 import java.util.Scanner;
 
-interface Lambda{
-	
+interface tempInterface {
 	
 	final double PIE = 3.14;
 	final double r = 2;
@@ -11,122 +10,114 @@ interface Lambda{
 	final double h = 4;
 	final double a = 5;
 	final double l = 6;
-	final double p = 7;	
-	
-	double Triangle();
-	double Cube();
-	double Rectangle();
-	double Circle();
-	double Cyclinder();
-	double Prism();
-	double PentagonicCyclinder();
-	double Cone();
-	double Sphere();
-}
+	final double p = 7;
 
-class Calcu implements Lambda{
-	
-	public double Triangle() {
-		double val = (b*h)/2;
-		return val ;
-	}
-	
+	void commonName();
 
-	public double Cube() {
-		double val = 6*a*a;
-		return val ;
-	}
-
-	public double Rectangle() {
-		double val = l*b;
-		return val ;
-	}
-
-	public double Circle() {
-		double val = PIE*r*r;
-		return val ;
-	}
-	
-	public double Cyclinder() {
-		double val = 2*PIE*r*h + 2*PIE*r*r;
-		return val ;
-	}
-
-	public double Prism() {
-		double val = 2*b + p*h;
-		return val ;	
-	}
-
-	public double PentagonicCyclinder() {
-		double val = 5*a*h+((1/2)*Math.sqrt(5*(5+2*Math.sqrt(5))*a*a));
-		return val ;	
-	}
-
-	public double Cone() {
-		double val = PIE*r*(r+Math.sqrt((h*h)+(r*r)));
-		return val ;	
-	}
-
-	public double Sphere() {
-		double val = 4*PIE*r*r;
-		return val ;	
-	}
 }
 
 public class LambdaShapes {
+
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-				
-		Calcu cal  = new Calcu();
-		
+
 		Scanner sc = new Scanner(System.in);
-		int in;
+		String in;
 		System.out.println("Available shapes are -");
 		System.out.println("1.Triangle\n2.Cube\n3.Rectangle\n4.Circle\n5.Cylinder\n6.Prism\n7.Pentagonic-cyclinder"
 				+ "\n8.Cone\n9.Sphere");
 		System.out.println("\nChoose any shape -");
-		in = sc.nextInt();
-		switch (in){
-		case 1: {
-			System.out.println("Area is "+cal.Triangle());
+		in = sc.next();
+
+		switch (in) {
+		case "Triangle": {
+			{
+				tempInterface t = () -> {
+					System.out.println("Area is : " + (tempInterface.b*tempInterface.h)/2);
+				};
+				t.commonName();
+			}
 			break;
 		}
-		case 2: {
-			System.out.println("Area is "+cal.Cube());
+		case "Cube": {
+			{
+				tempInterface t = () -> {
+					System.out.println("Area is : " + 6*(tempInterface.a*tempInterface.a));
+				};
+				t.commonName();
+			}
 			break;
 		}
-		case 3: {
-			System.out.println("Area is "+cal.Rectangle());
+		case "Rectangle": {
+			{
+				tempInterface t = () -> {
+					System.out.println("Area is : " + tempInterface.l*tempInterface.b);
+				};
+				t.commonName();
+			}
 			break;
 		}
-		case 4: {
-			System.out.println("Area is "+cal.Circle());
+		case "Circle": {
+			{
+				tempInterface t = () -> {
+					System.out.println("Area is : " + tempInterface.PIE*tempInterface.r*tempInterface.r);
+				};
+				t.commonName();
+			}
 			break;
 		}
-		case 5: {
-			System.out.println("Area is "+cal.Cyclinder());
+		case "Cylinder": {
+			{
+				tempInterface t = () -> {
+					double cal = 2*tempInterface.PIE*tempInterface.r*tempInterface.h + 
+							2*tempInterface.PIE*tempInterface.r*tempInterface.r;
+					System.out.println("Area is : " + cal);
+				};
+				t.commonName();
+			}
 			break;
 		}
-		case 6: {
-			System.out.println("Area is "+cal.Prism());
+		case "Prism": {
+			{
+				tempInterface t = () -> {
+					System.out.println("Area is : " + 2*tempInterface.b*tempInterface.p*tempInterface.h);
+				};
+				t.commonName();
+			}
 			break;
 		}
-		case 7: {
-			System.out.println("Area is "+cal.PentagonicCyclinder());
+		case "PentagonicCyclinder": {
+			{
+				tempInterface t = () -> {
+					double ne = 5*tempInterface.a*tempInterface.h+((1/2)*Math.sqrt(5*(5+2*Math.sqrt(5))*tempInterface.a*tempInterface.a));
+					System.out.println("Area is : " + ne);
+				};
+				t.commonName();
+			}
 			break;
 		}
-		case 8: {
-			System.out.println("Area is "+cal.Cone());
+		case "Cone": {
+			{
+				tempInterface t = () -> {
+					double emp = tempInterface.PIE*tempInterface.r*(tempInterface.r+Math.sqrt((tempInterface.h*tempInterface.h)+(tempInterface.r*tempInterface.r)));
+					System.out.println("Area is : " + emp);
+				};
+				t.commonName();
+			}
 			break;
 		}
-		case 9: {
-			System.out.println("Area is "+cal.Sphere());
+		case "Sphere": {
+			{
+				tempInterface t = () -> {
+					System.out.println("Area is : " + 4*tempInterface.PIE*tempInterface.r*tempInterface.r);
+				};
+				t.commonName();
+			}
 			break;
 		}
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + in);
 		}
-
-	}	
-
+		sc.close();
+	}
 }
-
