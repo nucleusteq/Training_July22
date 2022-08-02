@@ -32,7 +32,7 @@ public class ATMProblem implements Runnable {
 	@Override
 	public void run() {
 		for (int x = 0; x < 5; x++) {
-			makeWithdrawal(10);
+			makeWithdrawal(100);
 			if (acct.getBalance() < 0) {
 				System.out.println("account is overdrawn!");
 			}
