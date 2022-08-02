@@ -1,8 +1,18 @@
+1.1
+Rahul will use the following command - chmod 760 financial_report.txt This will give access and modifiy permissions to the sales department.
+
+1.2
+vim financial_report.txt - For reading mode.
+Esc + :w to open file in writable mode.
+Write changes into your file.
+Esc + :wq to save changes and exit. 
+
+1.3
+First establish a connection with the other company's system using this code - sftp other_company_user@10.23.43.242. This will open in sftp mode. Now using this command - sftp> put financial_report.txt , you can send this file to the other system. 
+
 1.4
 -rw-r--r-x - read and write for user, read for groups, read and execute for others in regular file
 drwxr--rwx - read, write and execute for user, read for groups, read, write and execute for others in directory
-
-
 
 1.5
 777 - Read, write, execute for user, group and others.
