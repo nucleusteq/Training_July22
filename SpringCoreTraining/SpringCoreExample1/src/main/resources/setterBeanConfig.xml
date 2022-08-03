@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+	<bean name="student" class="com.mt.training.SetterInjection.Student">
+		<property name="id" value="101"/>
+		<property name="name" value="Manav"/>
+		<property name="age" value="22"/>
+	</bean>
+   
+    <bean name="school" class="com.mt.training.SetterInjection.School">
+    	<property name="name" value="EHIS"/>
+    	<property name="student" ref="student"/>
+    </bean>
+    
+</beans>

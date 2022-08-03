@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean name="student1" class="com.mt.training.ConstructureInjection.Student">
+   		<constructor-arg value="19"/>
+   		<constructor-arg value="Manav Jindal"/>
+   		<constructor-arg value="22"/>
+   		<constructor-arg value="9865478956"/>
+   </bean>
+   
+   <bean name="student2" class="com.mt.training.ConstructureInjection.Student">
+   		<constructor-arg value="20"/>
+   		<constructor-arg value="Amit Sahu"/>
+   		<constructor-arg value="22"/>
+   		<constructor-arg value="999999999"/>
+   </bean>
+   
+    <bean name="student3" class="com.mt.training.ConstructureInjection.Student">
+   		<constructor-arg value="22"/>
+   		<constructor-arg value="Nihit Vyas"/>
+   		<constructor-arg value="21"/>
+   		<constructor-arg value="8888888888"/>
+   </bean>
+   
+   <bean name="school" class="com.mt.training.ConstructureInjection.School">
+   		<constructor-arg value="EHIS"/>
+   		<constructor-arg value="987564589"/>
+   		<constructor-arg>
+   			<list>
+   				<ref bean="student1"/>
+   				<ref bean="student2"/>
+   				<ref bean="student3"/>
+   			</list>
+   		</constructor-arg>
+   </bean>
+</beans>  
