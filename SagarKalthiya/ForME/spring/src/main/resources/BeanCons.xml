@@ -8,5 +8,11 @@
    <bean id = "School" class = "com.spring.firsst.demo.School">
       <property name = "message" value = "Hello World!"/>
    </bean>
+   
+   <bean id ="setter" class="com.spring.firsst.Setter.injection.Student" >
+      <property name = "id" value = "101"></property>
+      <property name = "name" value = "prakriti"></property>
+      <property name = "address" value = "7"></property>
+   </bean>
 
 </beans>
