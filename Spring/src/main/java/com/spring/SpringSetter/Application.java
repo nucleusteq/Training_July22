@@ -1,12 +1,12 @@
-package com.spring.SpringDemo;
+package com.spring.SpringSetter;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application {
 		public static void main(String[] args) {
 			ClassPathXmlApplicationContext tempObj  = new 
-					ClassPathXmlApplicationContext("bean.xml");
-		      Student sch = (Student) tempObj.getBean("student");
+					ClassPathXmlApplicationContext("beanSetter.xml");
+			StudentSetter sch = (StudentSetter) tempObj.getBean("studentSet");
 		      System.out.println(sch);
 		}
 	}

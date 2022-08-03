@@ -1,16 +1,10 @@
-package com.spring.SpringDemo;
+package com.spring.SpringSetter;
 
-public class Student {
+public class StudentSetter {
 
 	private Integer id;
 	private String name;
 	
-
-		public Student(Integer id, String name) {
-		super();
-		this.id = id;
-		this.name = name;
-		}
 		
 		@Override
 		public String toString() {
@@ -33,8 +27,4 @@ public class Student {
 			this.name = name;
 		}
 
-		public Student() {
-			super();
-			// TODO Auto-generated constructor stub
-		}
 	}
