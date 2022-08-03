@@ -1,11 +1,11 @@
 package MultiThreading;
 
-import java.util.Random;
-import java.util.*;
 
 
+
+/*
 public class BankingThread extends Thread {
-	  /* private long[] t_balance; // acount balance
+	   private long[] t_balance; // acount balance
 	   private long t_count; // number of transactions done so far
 	   public BankingThread(ThreadGroup g, String n) {
 	      super(g,n);
@@ -43,5 +43,5 @@ public class BankingThread extends Thread {
 	            break;
 	         }
 	      }
-	   }*/
-	}
+	   }
+	}*/

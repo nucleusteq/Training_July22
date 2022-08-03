@@ -10,7 +10,7 @@ interface ShapeTwo{
     public double AreaDouble(double as,double bs); 
 }
 
-public class LambdaInterfaceMethod {
+public class LambdaInterfaceMethod2 {
 
 	static double pi = 3.14; 
 	static double base = 4.0;

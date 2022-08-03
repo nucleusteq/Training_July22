@@ -51,7 +51,6 @@ public synchronized void withdraw(int bal) {
         if (balance >= bal) {
             System.out.println(person.getName() + " " + "is try to withdraw");
             try {
-            	//account.notifyAll();
             	Thread.sleep(1000);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -62,11 +61,9 @@ public synchronized void withdraw(int bal) {
             System.out.println(person.getName() + " " + "doesn't have enough money for withdraw ");
         }
         System.out.println(person.getName() + " " + " withdraw Rs." + balance);
-       // account.wait();
     } catch (Exception e) {
         e.printStackTrace();
     }
-   
 }
 
 public synchronized void deposit(int bal) {
@@ -74,7 +71,6 @@ public synchronized void deposit(int bal) {
         if (bal > 0) {
             System.out.println(person.getName() + " " + " is try to deposit");
             try {
-            	//account.wait();
                 Thread.sleep(1000);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -85,7 +81,6 @@ public synchronized void deposit(int bal) {
             System.out.println(person.getName() + " " + "doesn't have enough money for deposit");
         }
         System.out.println(person.getName() + " " + " deposit Rs." + balance);
-       // account.notifyAll();
     } catch (Exception e) {
         e.printStackTrace();
     }
@@ -101,13 +96,12 @@ public class ATMProblem extends Thread implements Runnable{
 	
 	@Override
 	public void run() {
-		 Account acc = Account.getAccount(person);
 	    for (int i = 0; i < 3; i++) {
 	        try {
-	           
-	            acc.withdraw(100);
+	            Account acc = Account.getAccount(person);
+	            acc.withdraw(1000);
 	            try {
-	                Thread.sleep(2000);
+	                Thread.sleep(3000);
 	            } catch (InterruptedException ex) {
 	                Logger.getLogger(ATMProblem.class.getName()).log(Level.SEVERE, null, ex);
 	            }
@@ -115,14 +109,12 @@ public class ATMProblem extends Thread implements Runnable{
 	                System.out.println("A/c is overdrawn!");
 	            }
 	            acc.deposit(200);
-	            
 
 	        } catch (Exception e) {
 	            e.printStackTrace();
 	        }
 	    }
 	    System.out.println("Final A/c balance is Rs." + Account.getBal());
-	    acc.notifyAll();
 	}
 
 	
