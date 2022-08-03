@@ -6,7 +6,7 @@ public class Application {
 		public static void main(String[] args) {
 			ClassPathXmlApplicationContext tempObj  = new 
 					ClassPathXmlApplicationContext("bean.xml");
-		      Student sch = tempObj.getBean("student",Student.class);
+		      Student sch = (Student) tempObj.getBean("student");
 		      System.out.println(sch);
 		}
 	}
