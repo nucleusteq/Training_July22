@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   
+<bean id ="person" class ="com.training.Student">
+<property name ="id" value = "1"></property>
+  <property name = "name" value = "test"></property>
+ 
+ 
+ 
+ 
+</bean>
+<bean id ="Employee" class ="com.Practice.Setter.injection.Employee">
+<constructor-arg name ="id" value ="111"></constructor-arg>
+<constructor-arg name ="name" value ="Rani" />
+<constructor-arg name ="age" value ="18" />
+<constructor-arg name ="course" value ="Spring"></constructor-arg>
+</bean>
+
+
+
+<bean id ="Police" class="com.LifeCycle.bean.Police" init-method ="init" destroy-method="destroy">
+<property name = "policeId" value = "101"></property>
+<property name = "policeName" value = "prakriti"></property>
+<property name = "numberOfCases" value = "7"></property>
+</bean>
+
+<bean id ="Student" class="com.Practice.Setter.injection.Student" >
+<property name = "id" value = "101"></property>
+<property name = "name" value = "prakriti"></property>
+<property name = "address" value = "7"></property>
+</bean>
+
+</beans>
