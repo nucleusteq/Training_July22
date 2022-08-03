@@ -1,9 +1,6 @@
 package JavaTrainingSession.Maps;
 
-import java.util.Map.Entry;
-import java.util.Scanner;
 import java.util.TreeMap;
-
 
 class addElements{
 	static void add(TreeMap<Integer,String> map_obj,int key ,String value)
@@ -13,34 +10,25 @@ class addElements{
 }
 public class ThresholdMap {
 	public static void main(String[] args) {
+		
 		TreeMap<Integer,String> treeMap = new TreeMap<Integer,String>();
 		
-		temp.add(treeMap,11,"Manav");
-		temp.add(treeMap,6,"Manav");
-		temp.add(treeMap,5,"Hari");
-		temp.add(treeMap,3,"Poco");
-		temp.add(treeMap,2,"Piyush");
-		temp.add(treeMap,8,"Yuvraj");
-		temp.add(treeMap,9,"Ayush");
-		temp.add(treeMap,10,"Manav");
+		addElements.add(treeMap,11,"Yuvraj");
+		addElements.add(treeMap,6,"Piyush");
+		addElements.add(treeMap,5,"Ayush");
+		addElements.add(treeMap,3,"Poco");
+
+		System.out.println("Current tree map having 4 elements : "+treeMap);
+		System.out.println("Now assigning map size = 3 \n");
+		int thresholdSize = 3;
 		
+		if (treeMap.size() >= thresholdSize){
+			treeMap.clear();
+		}
+		System.out.println("Now doing one entry in map via add method.");
+		addElements.add(treeMap,8,"manav");
+		System.out.println("After clearing the map and adding one entry : "+treeMap);
 		
-		
-		System.out.println(treeMap);
-		
-		
-//		int thresh_val ;
-//		Scanner sc = new Scanner(System.in);
-//		System.out.println("Enter the threshold size for map : ");
-//		thresh_val=sc.nextInt();
-//		
-//		System.out.println("Keys are : ");
-//		for (Entry<Integer,String> entry : treeMap.entrySet())
-//		{
-//			System.out.println(entry.getKey());
-//			System.out.println(entry.getValue());
-//		}		
-//		sc.close();
 	}
 
 }
