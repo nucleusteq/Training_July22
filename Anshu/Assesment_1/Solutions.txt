@@ -1,0 +1,40 @@
+1.1 chmod o + rw financial_report.txt
+
+1.2
+
+1.3
+
+1.4    -:indicates financial_report.txt is a file 
+     rw-: user is having read and write permission for accessing the financial_report.txt
+     r--: group is having only read permission for accessing financial_report.txt
+     r-x: others can read and execute the financial_report.txt
+
+
+       d: indicates finance is a directory 
+     rwx: user is having read write and execute permission for finance directory
+     r--: group is having read permission for finance directory
+     rwx: others are having all permisions for finance directory.
+
+1.5   777- it will be readable, writable and executable by all users, group and others.
+      647- it will be readable and writeable for user, readable for group, and readable, writteable, and executeable for others.
+      660- it will be readable and writeable for user and group. Others do not have any permissions.   -rw-rw----
+      475- it will be readable for user, readable, writeable, and executeable for group, and readable and executeable for others.   -r--rwxr-x
+
+1.6   change directory: cd directory_name
+           remove file: rm filename 
+      remove directory: rm -d directory_name(for empty directory)   or   rm -r directory_name(for non-empty directory)
+
+2.1  git checkout -b feature/<newbranch>
+
+2.2  git checkout main
+     git fetch origin main
+     git merge new branch name
+     git push origin main
+
+2.3  This is a merge conflict. git log --merge 
+     The git log --merge command helps to produce the list of commits that are causing the conflict
+
+2.4  git add application.java
+     git commit -m "message"
+     git push origin main
+     Second method to resolve the conflict: git merge --abort
