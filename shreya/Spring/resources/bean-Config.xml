@@ -7,7 +7,7 @@
    <bean id="student" class="com.nt.training.SimpleBean.Student">
    
    <property name="id" value="1"></property>
-   <property name="name" value="test"></property>
+   <property name="name" value="Shreya"></property>
    
    </bean>
    
