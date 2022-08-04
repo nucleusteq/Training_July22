@@ -20,7 +20,7 @@ scp <financial_report.txt> <user_name> @<system_ip> :/home/rahul /financial_repo
 -r-x :- says others have read and execute permission
 1 – it is the execute permission
 
-drwxr--rwx 1 rahul finance 4096 Jul 27 10:94 finance =
+drwxr--rwx 1 rahul finance 4096 Jul 27 10:94 finance = d is a directory, where owner can read, write and execute, r--
 
 1.5)
 777- all can read/write/execute (full access)

@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean name ="employee" class="com.clearn.logic.SetterInjection.Employee">
+   <property name="name" value="Rashi" ></property>
+    <property name="id" value="201" ></property>
+     <property name="profile" value="Engineer" ></property>
+   </bean>
+   
+   <bean name ="office" class="com.clearn.logic.SetterInjection.Office">
+   <property name="name" value="Rashi" ></property>
+    <property name="contactNumber" value="832774910" ></property>
+     <property name="employee" ref="employee" ></property>
+     
+   </bean>
+   
+</beans>
