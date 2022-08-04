@@ -1,0 +1,90 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <!--   -->
+    <!-- Person class  -->
+<bean id ="person" class ="com.training.Person">
+<property name ="id" value = "1"></property>
+  <property name = "name" value = "test"></property>
+
+</bean>
+
+ <!-- Employee class  -->
+<bean id ="Employee" class ="com.Practice.constructor.injection.Employee">
+<constructor-arg name ="id" value ="111"></constructor-arg>
+<constructor-arg name ="name" value ="Rani" />
+<constructor-arg name ="age" value ="18" />
+<constructor-arg name ="course" value ="Spring"></constructor-arg>
+</bean>
+
+
+ <!-- Police class  -->
+<bean id ="Police" class="com.LifeCycle.bean.Police" init-method ="init" destroy-method="destroy">
+<property name = "policeId" value = "101"></property>
+<property name = "policeName" value = "prakriti"></property>
+<property name = "numberOfCases" value = "7"></property>
+</bean>
+
+<bean id ="Student" class="com.Practice.Setter.injection.Student" >
+<property name = "id" value = "101"></property>
+<property name = "name" value = "prakriti"></property>
+<property name = "address" value = "strret vijay nagar indore"></property>
+</bean>
+
+
+
+
+ <!--  Person1 -->
+ <bean name = "Person1" class = "com.Spring.collection.example.Person1">
+ <property name ="name" value="Radhe" />
+ <property name = "number">
+ <list>
+     <value> 79765434567</value>
+     <value> 79765434567</value>
+     <value> 7976544646567</value>
+     <value> 79765244567</value>
+     <value> 79763367</value>
+ </list></property>
+ 
+ <property name="address">
+ <set>
+    <value>Delhi</value>
+    <value>mumbai</value>
+    <value>indore</value>
+    <value>banglore</value>
+    
+    <value>lunknow</value>
+ </set>
+</property>
+
+<property name="courses">
+<map>
+ <entry key="spring" value = "concepts"></entry>
+ <entry key="java" value = "oops"></entry>
+ <entry key="cpp" value = "object"></entry>
+ <entry key="javascript" value = "web"></entry>
+ <entry key="python" value = "easy"></entry>
+</map>
+
+</property>
+ 
+ </bean>
+ 
+ 
+ 
+ <!--  lifecycle1 
+ <bean id="AwareBeanImp" class="coom.spring.framework.lifecycle1.AwareBeanImp">
+   </bean>
+   -->
+   
+   
+   <bean name="Cricket" class="com.life2cycle.bean.Cricket" init-method="init" destroy-method="destroy">
+		<property name="id" value="07"></property>
+		<property name="name" value="Ms dhoni"></property>
+	</bean>
+
+</beans>
