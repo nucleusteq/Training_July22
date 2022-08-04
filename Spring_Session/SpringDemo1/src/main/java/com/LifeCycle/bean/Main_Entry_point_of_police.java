@@ -1,17 +1,18 @@
-package com.training;
+package com.LifeCycle.bean;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Application {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+public class Main_Entry_point_of_police {
+
+	public static void main(String args[]) {
+		
 		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("beanConfigration.xml");
-		Person st =(Person) applicationContext.getBean("Person");
-		System.out.println(st);
+		Police p =(Police) applicationContext.getBean("Police");
+		System.out.println(p);
 		
 		applicationContext.close();
 
 	}
-
 }
