@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	<bean id="employee1"
+		class="com.nt.training.constructorBased.Employee">
+		<constructor-arg value="1"></constructor-arg>
+		<constructor-arg value="Test"></constructor-arg>
+	</bean>
+
+	<bean id="employee2"
+		class="com.nt.training.constructorBased.Employee">
+		<constructor-arg value="2"></constructor-arg>
+		<constructor-arg value="Test2"></constructor-arg>
+	</bean>
+
+
+	<bean id="office" class="com.nt.training.constructorBased.Office">
+
+		<constructor-arg value="Nt"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<ref bean= "employee1" />
+				<ref bean= "employee2" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>
