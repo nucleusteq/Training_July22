@@ -11,5 +11,10 @@
    <property name="id" value="1"></property>
    
    </bean>
+   <bean id="School1" class="com.traning.beanconfig.School">
+   	<property name="student" value="boss"></property>
+   <property name="id" value="2"></property>
+   
+   </bean>
    
    </beans>
