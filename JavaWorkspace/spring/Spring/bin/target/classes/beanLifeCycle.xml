@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="BLC" class="com.spring.SpringBeanLifeCycle.BeanLifeCycle"  
+		init-method = "__init__" destroy-method = "__destroy__" >
+		<property name="name" value="LifeCycle" ></property>
+	</bean>
+
+
+</beans>
+   
+   
+   
