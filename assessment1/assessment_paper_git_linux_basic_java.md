@@ -1,7 +1,7 @@
 # Assessment 1
 ## Git, Linux and Basic Java
 
-#### Linux
+### Linux
 
 1. Rahul is an employee of the finance department in the company ABC. In the company's system which is a Linux server (not any GUI Linux distro), Rahul is the owner of a file in his home directory /home/rahul/financial_report.txt. Few people from the sales department want to access and modify that file. How Rahul would make sure that people from another department will be able to read and modify the file. Also, provide the commands for the same if any needed.
 
@@ -23,7 +23,7 @@ drwxr--rwx    1 rahul finance 4096 Jul 27 10:94 finance
 6. What are the command used for the below operations in Linux, also provide the syntax for the same.
 change directory, remove file and directory, rename file and directory
 
-#### Git
+### Git
 John and Aditya Working in main branch of GIT repo. John creates a new branch for a new feature. 
 1. Write a command to create a branch which have all changes from main.
 
@@ -36,7 +36,7 @@ has a conflict with the code that Aditya has pushed to main.
 3. Help John by at least 2 ways to debug and get which has a conflict and what is the conflict.
 4. Help john also to resolve the conflict and push his changes to main. Write all steps so John and Aditya can work more collaboratively.
 
-#### Java
+### Java
 1.  We have to design discount system for a retail chain, which provides services and sells pet products. It offers 3 types of memberships: Premium, Gold and Silver. Premium, gold and silver members receive a discount of 25%, 15%, and 8%, respectively, for all services provided. Customers without membership receive no discount. All members receive a flat 8% discount on products purchased. We have to design the classes which should at least 3 classes: Customers, Discounts and Visits. Designed classes should show below information:
       - If classes are related so we have to show case the relationship.
       - Classes should have member variables and methods to solve the above problem.
