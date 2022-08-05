@@ -1,0 +1,20 @@
+task1 ->  git checkout -b new_branch_name - to create new branch.
+
+task2  Aditya-> git add .   - to add the changes 
+		 git commit -m "new_commit"  - to commid to the changes
+		 git push origin new_branch_name   - to push the changes.
+		 
+		 After the push , a user can go to raise a PR through github , and then you
+		 can select an option to merge that PR to main.
+		 
+task3 -> John -> John can  add commit and push his code to his branch 
+				then he can raise a PR , and for the conflicts which he is facing
+				either 
+				1. he can rename the file name by that the conficts can be solved 
+				2. he can solve the conflict i.e he can make the changes in his code for the 
+					particular conflict.
+					
+task4 -> John and Aditya can get in contact and see what are the conflicts , 
+			they can separate their files or one of them can take others code pull and then 
+			he can make the changes and can push the clean code , after that the same user can 
+			raise a PR and merge the code in main.

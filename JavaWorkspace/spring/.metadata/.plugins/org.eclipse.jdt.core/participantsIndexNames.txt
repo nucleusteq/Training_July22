@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\Users\opera\OneDrive\Desktop\JavaWorkspace\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2465951387.index
+\nucleusteqspringmvc\src\main\java

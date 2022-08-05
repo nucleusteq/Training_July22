@@ -1,0 +1,23 @@
+INDEX VERSION 1.131+C:\Users\opera\OneDrive\Desktop\JavaWorkspace\spring\.metadata\.plugins\org.eclipse.jdt.core
+3040981853.index
+1322635626.index
+1995539946.index
+2609626394.index
+768346431.index
+2593201226.index
+1299817569.index
+2355659561.index
+2767716382.index
+4227766509.index
+3871847412.index
+1881498396.index
+1056808879.index
+3217349789.index
+2413240698.index
+1945849153.index
+3759669648.index
+1565971309.index
+1187615459.index
+2820792360.index
+1065553608.index
+2122430343.index

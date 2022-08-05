@@ -1,0 +1,14 @@
+1. -rw-r--r-x  1 rahul finance 2345 Jul 27 12:94 financial_report.txt   
+	All these permissions are for financial_report.txt file
+	---> - represents the type respectively 1st user 2nd group 3rd others
+	---> rw represents that user is having read and write permission. 
+	---> r-- represents that group is having read only.
+	---> r-x represents read and execute for others
+	
+2. drwxr--rwx 1 rahul finance 4096 Jul 27 10:94 finance
+	All these permissions are for finance directory
+	
+	d represents directory
+	rwx read write and execute permission for owner
+	r-- read permission for group
+	rwx  read write and execute permission for others
