@@ -33,7 +33,9 @@ Similarly, Aditya also works on a new feature, and he creates a new branch from 
 
 Now after some time John also have to commit its changes to main branch and he also has to push his changes to main. But when he was creating a PR, so he found that there was a Java class application.java
 has a conflict with the code that Aditya has pushed to main.
+
 3. Help John by at least 2 ways to debug and get which has a conflict and what is the conflict.
+
 4. Help john also to resolve the conflict and push his changes to main. Write all steps so John and Aditya can work more collaboratively.
 
 ### Java
