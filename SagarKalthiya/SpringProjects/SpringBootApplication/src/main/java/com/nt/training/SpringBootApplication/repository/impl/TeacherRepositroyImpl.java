@@ -73,7 +73,7 @@ public class TeacherRepositroyImpl implements TeacherRepository{
 	@Override
 	public List<TeacherDomain> getTeacherBySubject(String specialization) {
 		// TODO Auto-generated method stub
-		System.out.println("Specialization in subject"+specialization);
+		System.out.println("Specialization in subject :- "+specialization);
 		List<TeacherDomain> filterteacher  = new ArrayList<TeacherDomain>();
 		
 		for(TeacherDomain tech:teachers) {
