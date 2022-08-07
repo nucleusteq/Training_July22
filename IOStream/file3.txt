@@ -1,6 +1,0 @@
-we are creating a file
-named file3
-we will reverse
-the content of 
-this file,
-Thank you.
