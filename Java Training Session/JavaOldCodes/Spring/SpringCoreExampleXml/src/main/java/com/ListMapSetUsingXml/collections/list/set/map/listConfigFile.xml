@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   
+   <bean id="emp1" class="com.training.collections.list.set.map.EmployeeLsit">
+   	<property name="name" value="piyush"></property>
+   <property name="clothes" >
+   		<list>
+   				<value>"zara"</value>
+   				<value>"hnm"</value>
+   				<value>"lv"</value>
+   		</list>
+   </property>
+   
+   
+    <property name="address" >
+   		<set>
+   				<value>"delhi"</value>
+   				<value>"dewas"</value>
+   				<value>"indore"</value>
+   		</set>
+   </property>
+   
+   
+    <property name="courses" >
+   		<map>
+   			<entry key="java" value="2month" />   
+   			 <entry key="spring" value="3month" />  
+   		</map>
+   </property>
+   		
+   
+   
+  
+   </bean>
+   
+   </beans>
