@@ -26,6 +26,12 @@ public class VendingMachineServiceImpl implements VendingMachineService{
 		return vendingMachineRepo.getMyProduct(peoductId, userAmount); 
 	}
 
+	@Override
+	public String getResult(Integer pId, Integer uAmount) {
+		// TODO Auto-generated method stub
+		return vendingMachineRepo.getResult(pId, uAmount);
+	}
+
 
 	
 	

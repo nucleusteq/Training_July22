@@ -28,5 +28,12 @@ public class VendingMachineController {
 			@RequestParam("userAmount") int userAmount){
 		return vendingMachineService.getMyProduct(productId, userAmount);
 	}
+	
+	@RequestMapping(path = "/getResult" ,  method=RequestMethod.POST)
+	public String getResult(
+			@RequestParam("productId") int productId,
+			@RequestParam("userAmount") int userAmount){
+		return vendingMachineService.getResult(productId, userAmount);
+	}
 
 }

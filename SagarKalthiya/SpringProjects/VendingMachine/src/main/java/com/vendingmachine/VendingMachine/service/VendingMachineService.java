@@ -8,5 +8,6 @@ public interface VendingMachineService {
 	
 	public List<VendingMachineDomain> getProductList();
 	public List<VendingMachineDomain> getMyProduct(int peoductId , int userAmount);
+	public  String getResult(Integer pId, Integer uAmount);
 
 }

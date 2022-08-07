@@ -51,13 +51,13 @@ public class VendingMachineRepositoryImpl implements VendingMachineRepository {
 					    quntity--;
 					    product.setProductQuntity(quntity);
 						System.out.println("Remaining  INR 5*"+ money);				
-						product.setProductDescription("Remaining  INR 5*"+ money);
+						product.setProductDescription("Collect Your Remaining amount < =INR 5*"+ money +"= > "+"and Your Product "+product.getProductName());
 						//msg = "Your Product is "+product.getProductName()+"and remaining amount isINR 5*"+ money;
 					}else {
-						product.setProductDescription("Product is not avilable");
+						product.setProductDescription("Product is not avilable take back your amount" +userAmount);
 					}    
 				}else {
-					product.setProductDescription("Not Have Enough Money");
+					product.setProductDescription("Not Have Enough Money take back your amount");
 				}
 				
 				myProduct.add(product);
@@ -65,6 +65,12 @@ public class VendingMachineRepositoryImpl implements VendingMachineRepository {
 		}		
 		
 		return myProduct;
+	}
+
+	@Override
+	public String getResult(Integer pId, Integer uAmount) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
