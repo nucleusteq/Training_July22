@@ -1,0 +1,183 @@
+Que 1
+
+if he initialize as "FINAL" keyword then he can store these as
+constant in java
+
+
+
+
+
+Que 2
+
+  using char data type 
+
+
+
+
+
+Que 3
+
+ for initialize the complte matrix data by which he can get
+the using loop
+
+
+
+
+
+
+que 4
+
+there are 2 ways:
+1.
+The class gets extended by another child class,
+ the child class will inherit all 
+properties and methods of the parent class and thus by
+ creating the object of the child class, we can call the 
+method in the parent class.
+2.
+The method is made static. Static methods are not called
+ through objects instead we use the class name to call
+ the static methods.
+
+
+
+que 5.
+
+There are mainly two types of exceptions in Java as follows:
+ Checked exception. Unchecked exception.
+Checked exceptions are also known as compile-time exceptions as these exceptions are checked by the compiler during the compilation process to confirm whether the exception is handled by the programmer or not. If not, then the system displays a compilation error.
+ For example, SQLException, IOException, InvocationTargetException, and ClassNotFoundException.
+
+The unchecked exceptions are those exceptions that occur during the execution of the program.
+ Hence they are also referred to as Runtime exceptions.
+
+
+
+
+que 6.
+
+All exception and error types are subclasses of class Throwable,
+ which is the base class of the hierarchy
+
+
+
+
+
+
+Que 7.
+
+The finally block always executes when the try block exits. This ensures that the finally block is executed even if an unexpected exception occurs. But finally is useful for more than just exception handling — it allows the programmer to avoid having cleanup code accidentally bypassed by a return, continue, or break. Putting cleanup code in a finally block is always a good practice, 
+even when no exceptions are anticipated.
+
+
+
+
+
+Que 8.
+
+for (int i = 1; i <= size; i++) {
+        for (int j = 1; j <= size; j++) {
+            System.out.print(matrix[j][i] + " ");
+        }
+        System.out.println();
+    }
+
+
+
+
+
+
+Que 9.
+
+If we want to transfer an object and, for instance, 
+store it on a disk or send it over a network, we need to 
+transform it into a byte stream. To do this, the class of that
+ object needs to implement the Serializable interface. 
+ serialization allows us to convert the state of an object 
+into a byte stream.
+ This byte stream does not contain the actual code.
+
+
+
+
+Que 10.
+
+Set/hashmap is used to store unique values 
+
+
+
+
+Que 11.
+
+import java.util.*;
+  
+public class Rakesh {
+    public static void main(String args[])
+    {
+        // Creating a HashSet
+        HashSet<String> set = new HashSet<String>();
+  
+        // Adding elements into HashSet using add()
+        set.add("add_element_1");
+        set.add("add_element_2");
+        set.add("add_element_3");
+        set.add("add_element_4");
+  
+        System.out.println("Original Before  HashSet: "
+                           + set);
+  
+        // Sorting HashSet using List
+        List<String> list = new ArrayList<String>(set);
+        Collections.sort(list);
+  
+        // Print the sorted elements of the HashSet
+        System.out.println(" After HashSet elements "+ "in sorted order "+ "using List: "+ list);
+    }
+}
+
+
+
+
+
+
+
+Que 12.
+
+Using an atomic variable is another way to achieve
+ thread-safety in java. When variables are shared by multiple 
+threads, the atomic variable ensures that threads don't crash
+ into each other
+
+
+
+
+Que 13.
+
+Threads can be created by using two mechanisms : 
+Extending the Thread class 
+Implementing the Runnable Interface
+
+
+
+Que 14.
+
+Avoid Nested Locks: A deadlock mainly happens when we give locks to multiple threads. Avoid giving a lock to multiple threads if we already have given to one.
+Avoid Unnecessary Locks: We can have a lock only those members which are required. Having a lock unnecessarily can lead to a deadlock.
+Using Thread.join(): A deadlock condition appears when one thread is waiting other to finish. If this condition occurs we can use Thread.join() with the maximum time the execution will take.
+
+
+
+
+Que 15.
+
+Preventing Memory Leak
+While writing code, remember the following points that prevent the memory leak in Java.
+
+Do not create unnecessary objects.
+Avoid String Concatenation.
+Use String Builder.
+Do not store a massive amount of data in the session.
+Time out the session when no longer used.
+Do not use the System.gc() method.
+Avoid the use of static objects. Because they live for the entire life of the application, by default. So, it is better to set the reference to null, explicitly.
+Always close the ResultSet, Statements, and Connection objects in the finally block.
