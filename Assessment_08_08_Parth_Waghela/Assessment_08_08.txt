@@ -1,0 +1,21 @@
+QUE1 :
+
+1 : 
+2 : The correct data type will be "char" because Grades will be A,B,C,D,E.
+3 :int[][] a = new int[12][n];
+4 :by calling refernce of that class
+5 :some Exceptions in java are ArrayIndexOutOfBounds, ArthmeticException,IOException, ClassNotFoundException,NullPointerException.
+6 :Throwable class is tha base class of all the Exception and Errors.
+7 :We can handle Exception by using try catch block where the line of code which may throw Exception is written in try block, Finally block is used to close the connection in case of any Exception or error(it's an always executable block)
+8 :
+9 :The purpose of using Serialization is: It is easy to customize, it saves object's of stateother than that by default  string and wrapper classes is implement by the serializable interface ,It has not method or data member. 
+10 :HashSet<String>
+11 :Collections.sort() method
+12 :thread-safety can be to used Synchronized properly which will a thread-safe wrapper around the collection.
+13 :There are two ways to create a thread: By extending Thread classor By implementing Runnable interface.
+    A Thread perform various task - New, Active , Blocked / Waiting, Timed Waiting ,Terminated
+14 :Mutual Exclusion,Hold and Wait, No preemption, Circular wait these are used to prevent dead lock
+15 :Using the java. lang. ref package, you can work with the garbage collector it free up space it is a part of java.lang package
+ 
+
+
