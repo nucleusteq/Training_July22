@@ -1,0 +1,86 @@
+1. He is given number of students in each class and school has only classes from 1st till 12th. How can he store these constants in Java?
+ans :-   He can store these constant using Matrix that is a 2d array . where classe will be as  rows and rollnumber  will be as column.
+
+2.He has to identify the correct Data Type for the grade of student. What is the correct data type for grades?
+ans :-    The correct datatype for grades  should  be string.
+
+Q3: He has to initialize the complete matrix data by which he can get the data by entering class name and roll number. Please suggest him how he can do that.
+ans :-    He will take class as row number and rollnumber as column number . so suppose there is matrix that is  Grade[][] ..
+so he can get the date by accessing each element like Grade[1][7].. by doing this he will get the rank of studen having rollnumber 7 in class 2.
+
+Q4: He has to initialize his class without creating objects. He is not sure if it can be done or if it can be so how he can do it.
+ans :-   If he dont want to creat object the he should make method as static.
+ a static method is a method that is invoked or called without creating the object of the class in which the method is defined. 
+ All the methods that have static keyword before the method name are known as static methods.
+ We can also create a static method by using the static keyword before the method name.
+
+
+Q5: While doing some operations he got an Exception. Tell him what are the different types of exceptions in Java.
+ans :-  Built-in exceptions are the exceptions that are available in Java libraries.
+ArithmeticException: It is thrown when an exceptional condition has occurred in an arithmetic operation.
+ArrayIndexOutOfBoundsException ,ClassNotFoundException, IOException ,NullPointerException ,RuntimeException ,IllegalArgumentException 
+
+
+Q6: Tell him what is the base class of Exception and Error.
+ans :- The Throwable class is the superclass of all Java exceptions and errors.
+
+
+Q7: Suggest him how he can handle Exceptions and use of finally.
+ans :-  He can handle exception  by using exception handling. 
+for that using of try catch block is mandotory.
+in try block we wrote the risky cod emeans in which tha exception amy be occur and if any exception is occured then catck block will be in picture.
+int catch block we handle that exception by giving the name of that exception.
+and at last we write finally block that will run in every case. in finally block we write some sytem related configuration 
+like we can close all the networks and db files which we opended during our program.
+
+Q8: Write a code snippet to iterate the matrix data.
+int n= 12;
+int m= 20;
+int [][] grade= new int [n][m];
+for(int i=0;i<n;i++){
+	for (int j=0;j<m;j++){
+		System.out.println("Grade of student having rollnumber " +j+ "of class" +i+ "is " + grade[i][j]);
+
+	}
+}
+
+Q9: He has to transfer data to a different system. But he is confused if he can use Serialization and also suggest the purpose of it.
+ans :-  yess he can use Sereialization . 
+       Serialization in Java allows us to convert an Object to stream that we can send over the network or save it as file or store in DB for later usage.
+
+Now Rakesh Join the team and they have to work on the similar data and they have to solve another Problem. They need to enhancement the application. They are also facing some challenges.
+Let's help them out.
+Q10: They are looking to store the metrics data in collection so roll number and class should be unique and upon entering the same data value should be overridden. what collection they should use
+ans :-  They should use Map . key will be the combined form of class and rollnumber may be a objetct and value will be the grade meand string.
+we can define like ..
+HashMap<Student,String> hm= new HashMap<>();
+
+Q11. Now they have to sort the data as well as the different methods available to sort it in collection and write a generic method to solve collection framed in Q10.
+ans :- yess we can apply sorting on map on the basis of key.. and here kwy will be the class and rollnembr .
+	Map.sort(hmByKey); 
+
+Q12. They faced a very challenging situation here. Now Each class teacher will be entering their students' data concurrently so how can Rakesh and John make their collection thread safe.
+ans :-  They will use multithreaded code like they will extend thread class and will make their threads of student class and whenever a thread is started .. grade will be calculated and stored in the given collection.
+	and our code will be thread safe because we are doing operation using threads.
+
+
+Q13. As concurrent users started updating the dataset they are thinking to have a multi threaded application. Suggest them the various ways to create a multithreaded application.
+ans :- they can create Multithreaded applicatiob by two ways.
+1. by extending the thread class.
+2. bt implementing the runnable interface.
+
+Q14. They have another situation where their multi threaded application enters in a deadlock. How to prevent an application from a deadlock situation.
+ans :- Deadlock can be prevented by eliminating any of the four necessary conditions,
+ which are mutual exclusion, hold and wait, no preemption, and circular wait.
+ Mutual exclusion, hold and wait and no preemption cannot be violated practically.
+ Circular wait can be feasibly eliminated by assigning a priority to each resource.
+
+Q15. They got another problem in the code where they are facing memory leaks. What are the different ways to resolve the memory leaks for their app.
+ans :-  I am not sure for this answer.
+but we can do some steps tor resolve the memory leaks 
+Disable Startup Programs.
+Update Your Device Drivers.
+Do not create unnecessary objects.
+	1. Time out the session when no longer used.
+	2. Do not store a massive amount of data in the session.
+	3. Avoid String Concatenation.
