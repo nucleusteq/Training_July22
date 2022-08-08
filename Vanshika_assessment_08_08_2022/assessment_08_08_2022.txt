@@ -1,0 +1,86 @@
+John is working on a complex Java based project. John is new to java programming. John is working on a School dataset which he got in the below matrix. Row in matrix has data for a particular class. (e.g. Row 0 is class 1 row 1 is of class 2) and grades are arranged as per roll number in each row. (e.g. class 2 roll number 3 grade is A)
+[B+ A C A+...
+ C D	A	A+..
+ A- B A	A..
+..	
+ ]
+ 
+This Metrics represents:
+[class 1 rollnumber 1, Class 1 roll number 2...
+class2  roll number 1, class 2 roll number 2..
+.] 
+Since John is a new programmer so he doesn't know collections. John has some questions which he is unable to solve by himself. Help John in one line/one word only(Q1 to 6).
+Q1: He is given number of students in each class and school has only classes from 1st till 12th. How can he store these constants in Java?
+Ans1: int[] CLASSES =new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+	
+Q2: He has to identify the correct Data Type for the grade of student. What is the correct data type for grades?
+Ans2: char grades;  //The char data type is used to store characters.
+	
+Q3: He has to initialize the complete matrix data by which he can get the data by entering class name and roll number. Please suggest him how he can do that.
+Ans3: char[][] matrix= new int[12][n]
+	Scanner sc= new scanner;
+	int class= sc.nextInt;
+	int roll_num= sc.nextLine;
+	System.out.println(int matrix[class][roll_num]);
+
+Q4: He has to initialize his class without creating objects. He is not sure if it can be done or if it can be so how he can do it.
+Ans4: No, there is no such feature in java.
+
+Q5: While doing some operations he got an Exception. Tell him what are the different types of exceptions in Java.
+Ans5:Exceptions are of two types: (i)User-Defined Exception
+							
+					    (ii)Built-in Exception
+							(a)Checked Exceptions
+								--Occurs at runtime
+								eg:- FileNotFoundException : when we try to 									access that file which is not in the 									system.
+
+									ClassNotFoundException:
+									ClassNotFoundException is a checked 									exception in Java that occurs when 										the JVM tries to load a particular 										class but does not find it in the 										classpath.
+
+
+							(b)Unchecked Exceptions
+								--the one which occurs at the time of 										execution
+								eg:- ArrayIndexOutOfBoundsException: 									whenever we are trying to access any item 								of an array at an index which is not 									present in the array
+
+Q6: Tell him what is the base class of Exception and Error.
+Ans6: Throwable is the base class of all exception and error classes in Java.
+
+Q7: Suggest him how he can handle Exceptions and use of finally.
+Ans7: By using some keuwords he will be able to handle exceptions. keywords like: try,catch,finally
+	try: The statements which may cause problems are put in try block
+	catch: The catch statement allows you to define a block of code to be executed, if an    		  error occurs in the try block.
+	finally:We generally use the finally block to execute clean up code like closing 				connections, closing files, or freeing up threads, as it executes 				regardless of an exception. 
+Q8: Write a code snippet to iterate the matrix data.
+Ans8: Scanner input = new Scanner(System.in)
+	int[][] matrix= new int[12][n];
+	
+        for (int i = 0; i <= 12 ; i++) {
+            for (int j = 0; j < n; j++) {
+                squareMatrix[12][j] = input.nextInt();
+            }
+        }
+
+	
+Q9: He has to transfer data to a different system. But he is confused if he can use Serialization and also suggest the purpose of it.
+Now Rakesh Join the team and they have to work on the similar data and they have to solve another Problem. They need to enhancement the application. They are also facing some challenges.
+Let's help them out.
+Ans: 
+
+Q10: They are looking to store the metrics data in collection so roll number and class should be unique and upon entering the same data value should be overridden. what collection they should use.
+Ans10: Multidimensional Collection like ArrayList or HashSet.
+
+Q11. Now they have to sort the data as well as the different methods available to sort it in collection and write a generic method to solve collection framed in Q10.
+
+Q12. They faced a very challenging situation here. Now Each class teacher will be entering their students' data concurrently so how can Rakesh and John make their collection thread safe.
+
+Q13. As concurrent users started updating the dataset they are thinking to have a multi threaded application. Suggest them the various ways to create a multithreaded application.
+Ans 13: 1) By extending Thread class. 2) By implementing Runnable interface.
+
+Q14. They have another situation where their multi threaded application enters in a deadlock. How to prevent an application from a deadlock situation.
+Ans14: Deadlock can be prevented by eliminating any of the four necessary conditions, which 	  are mutual exclusion, hold and wait, no preemption, and circular wait.
+
+Q15. They got another problem in the code where they are facing memory leaks. What are the different ways to resolve the memory leaks for their app.
+
+
+Coding Exercise
+Q We have to create a weather records set where 10 cities data can be recorded at 1 min interval. After an hour, records should be sorted as per the cities in a collection. Remember that There can be multiple systems that can enter the weather data so it should support a multi threaded environment and consistency to be met. All java codes should be compiled.
