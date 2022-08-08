@@ -1,0 +1,40 @@
+Q1) John has the following data  - number of students in each class and 12 classes (1st to 12th. John can
+    create a matrix where rows will be 12 (for the 12 classes) and columns will be the students of roll no in order of each class.
+    
+Q2) Since the grade is a combination of letters and symbols, the ideal data type for this will be a String.
+
+Q3) John can enter the class and roll number as inputs to search within the matrix as the arguments x and y. Then after he iterates over his matrix using a for loop
+	, he can check if any iteration matches the value of the input. He can return or print the matrix iteration at the point where his values of class and rollnumber match to that in the matrix.
+
+Q4) John can make his class static in which case he won't need objects to initialize it.
+
+Q5) There are two main kinds of exceptions in java, checked and unchecked.
+	Some common checked exceptions include IOException, SQLException, ClassNotFoundException, InstantiationException, NoSuchMethodException
+	Some common unchecked exceptions include RuntimeException, NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException, IllegalArgumentException, IllegalStateException
+
+Q6) Base class of exceptions and errors is throwables.
+
+Q7) John can put his code which may create and exception in the "try" block and follow it up with "catch" block (depending on how many types of exceptions there are) and give the user a msg or print the exception. Finally is used to run a code no matter if there is an exception or not.
+
+Q8) After initializing the matrix John can use the following code - 
+	for(int i=0; i<matrix.length; i++) {
+			for( int j=0; j<matrix[i].length; j++) {
+				System.out.print(s[i][j]+" ");
+			}
+			System.out.println();
+		} 
+
+Q9) Yes John can certainly use serialization. The purpose of serialization the process of converting the Java code Object into a Byte Stream, to transfer the Object Code from one Java Virtual machine to another and recreate it on the other system.
+
+Q10) Collection they can use is set.
+
+Q11) Since we are using a set, the team can create a list and store all the hashset values into it, then sort the list using Collections.sort() method.
+
+Q12) They can use synchronization to make their collection thread safe.
+
+Q13) There are two major ways to create a multithreaded application. 1st - To extend your main class to the "Thread" class, override the run() and create an object using that class. 2nd - To implement the Runnable interface and override it's run method.
+
+Q14) Deadlock in any thread can be avoided by the concep of locking/mutual exclusion, allowing only 1 thread to access the shared object at a time.
+
+Q15) To avoid memory leaks we can use reference objects,  timing out sessions when not needed, using stringbuilder to not create unnecessary objects.
+ 
