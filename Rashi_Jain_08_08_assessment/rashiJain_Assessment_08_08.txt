@@ -1,0 +1,20 @@
+A1:
+A2: The correct data type will be "char" because Grades will be A,B,C,D,E.
+A3: int[][] a = new int[12][n];
+A4: Reference calling
+A5: FileNotFound(), IOExcpetion(), NullPointerEcxeption, RuntimeException, StringIndexOutOfBoundsException, ArrayIndexOutOfBounds,AritmeticExcetion, ClassNotFoundExceptionException, FileNotFoundException
+A6: Throwable class 
+A7: Exception ccan be handled by using try catch block where the line of code which may throw Exception is written in try block, Finally block is used to close the connection in case of any Exception or error(it's an always executable block)
+A8:
+A9:The purpose of using Serialization is: It is easy to customize, also it save an object's state.Another reason is by default, the string and all wrapper classes implement the serializable inerface. It has not method or data member.
+A10: Use a HashSet<String>.
+A11: 
+A12:
+A13:There are two ways to create a thread: By extending Thread class. By implementing Runnable interface.
+It performs the following tasks:
+A new thread starts(with new callstack).
+The thread moves from New state to the Runnable state.
+When the thread gets a chance to execute, its target run() method will run.
+
+A14: To avoid deadlock situation is to have a lock hierarchy.Make sure that all threads acquire locks or other resources in the same order. This avoids the deadlock scenario where thread 1 hold lock A and needs lock B while thread 2 holds lock B and needs lock A. With a lock hierarchy, both threads wo
+A15: Using the java. lang. ref package, you can work with the garbage collector in your program. This allows you to avoid directly referencing objects and use special reference objects that the garbage collector easily clears.

@@ -1,0 +1,23 @@
+Q1. He can store these constants in Java using java collections ArrayList or with the help of a two dimensional matrix.
+Q2. The correct data type for grades will be character(char) data type.
+Q3. He can do that with the help of indexes and using two nested for loops,out of which the outer one will be for rows(classes) and the inner one will be for columns(roll numbers).
+Q5. The different types of exceptions in Java are runtime exceptions and complie time exceptions. In. runtime exception we have arithmetic exception,null pointer exception and arrayIndexOutOfBounds exception
+    and in compile time exception we have class not found exception and io exception.
+Q6.Throwable is the base class of exception and error.
+Q7.He can handel exception using try catch block and he can use finally block to execute portion of code that he wants to run in any case, whether the exception occurs or not.
+Q8.Code snippet to iterate matrix data is
+	for(int i=0;i<noOfRows;i++){
+		for(int j=0;j<noOfColumns;j++){
+			System.out.print(matrix[i][j]+" ");
+		}
+		System.out.println();
+	}
+Q9.he should use Serialization while transfering the transaction data because serilization converts data into byte stream.
+Q10.They should use an set collection to store data.
+Q11. They can sort the collection in java using generic method of Collections i.e. Collections.sort().
+Q12.Rakesh and John make their collection thread safe by using keyword synchronized. It restricts the access of multiple threads to any shared resource.
+Q13.The various ways to create a multithreaded application are by either extending the Thread class or by implementing the Runnable interface.
+Q15.The different ways to resolve a memory leak is 
+	1.Do not create unnecessary objects.
+	2. Always close the ResultSet, Statements, and Connection objects in the finally block.
+	3.Avoid the use of static objects. Because they live for the entire life of the application, by default.
