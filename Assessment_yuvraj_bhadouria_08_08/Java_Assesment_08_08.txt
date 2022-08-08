@@ -1,0 +1,31 @@
+One line/word Answers
+Q1: Arraylist
+Q2:String
+Q3: creating object of classes
+Q4: Creating a object by iterating thorught the matrix
+Q5:using try catch block he can identify the exception and also handle it accordingly.
+Q6: Throwable
+Q7:try catch will be used by catching exception and handling them,finally will be used to execute 
+	the important code at last while will run if the code fails. example - closing connection to database.
+Q8: for (int i = 0; i < matrix.length; i++)
+    {
+        for (int a = 0; a < matrix[i].length; a++)
+        {
+		}
+	}
+Q9:Yes,Serialization is the process of converting an object into a stream of bytes to store the object or 
+	transmit it to memory, a database, or a file.
+Q10: HashSet
+Q11: Comparable interface and Comparable interface
+	public class Employee implements Comparable<Employee> {}
+
+Q12:they  can use Tread.wait() and notify() so that data can be inserted in serail.
+Q13: there are two method 1) extends Threads 2) implementing Runnable
+Q14: using the mutual exclusion , which will use hold and wait
+Q15: Do not create unnecessary objects.
+	Avoid String Concatenation.
+	Use String Builder.
+	Do not store a massive amount of data in the session.
+	Time out the session when no longer used.
+
+
