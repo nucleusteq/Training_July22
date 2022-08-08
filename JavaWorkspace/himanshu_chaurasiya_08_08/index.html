@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'></link>
+        <title>HTML Forms</title>
+        <style>
+            body{
+                /* display:flex; flex-direction:column; justify-content:center;min-height:100vh; */
+                padding: 140px 0;
+  text-align: center;
+            background-image: linear-gradient(80deg,#71b7e6, #9b59b6);
+            }
+            div{
+                background-color: white;
+                width: 40em;
+                height: 480px;
+            }
+            form.placeholder{
+                height: 2cm;
+            }
+            #button{
+
+                background-color: aqua;
+            }
+            #but{
+            background-color: orange;
+            color: aqua;
+         }
+        </style>
+     </head>
+   <body>
+      <div>
+      <form>
+        <br>
+        <h3 >Registration</h3>
+         Full Name<br> <input type="text" placeholder="Enter your name">
+         <br>
+         Userame<br> <input type="text" placeholder="Enter your username">
+         <br>
+         Email<br> <input type="text" placeholder="Enter your email">
+         <br>
+         Phone Number<br> <input type="text" placeholder="Enter your number">
+         <br>
+         Password<br> <input type="text" placeholder="Enter your password">
+         <br>
+         Confirm Password<br> <input type="text" placeholder="Confirm your password">
+         <br>
+         <h3>Gender</h3>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="female"> Prefer not to say<br><br>
+    <button type="button" id="but">Register</button>
+      </form>
+    </div>
+   </body>
+</html>
