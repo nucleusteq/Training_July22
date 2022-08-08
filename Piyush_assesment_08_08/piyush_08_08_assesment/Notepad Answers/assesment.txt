@@ -1,0 +1,50 @@
+1)we are gonna make a array list.
+
+2)Character will be the data type
+
+3)we will make objects.
+String className[] = new String[5];
+Integer rollNum[] = new Integer[5];
+for(int i = 0; i < 5; i++)
+		{
+			
+			System.out.print("Enter the class name: ");
+			className[i] = in.nextLine();
+			System.out.print("Enter the roll number: ");
+			rollNum[i] = in.nextInt();
+		}
+
+4)create a object and he will retrieve all the values in the matrix by iterating.
+
+5)he will handle the exception through try catch
+
+6)Throwable 
+
+7)he can handle exception through try and catch and if any exception occurs in the program then the program excecution takes a non linear path than its normal execution and some statements may get skipped.All those statements whick we want to execute in case of exception or no exception must written inside finally block
+
+8)for(int row = 0; row < studentGrades.length; row++)
+		{
+
+			for(int column = 0; column < studentGrades[row].length; column++)
+			{
+
+				System.out.println("Enter grade for each course for " + className[row] +
+						" " + rollNum[row]);
+				
+				System.out.println("Course" + (column+1) + ": ");
+				studentGrades[row][column] = in.nextLine();
+			}
+		}
+9) yes serialization can be used as it coverts an object into a stream of byte to store data in database.
+
+10)Hashset
+
+11)use hashset and then use collection.sort().
+
+12)They can use methods like Thread.sleep(),Thread .wait() ,Thread.notify() so that the data can iterate line bty line in serial.
+
+13)Their are two ways we can assign work to thread a)implements runnable  b)extend thread
+
+14)they will use hold and wait
+
+15)Do not create unnecessary objects.Avoid String Concatenation.Do not store a massive amount of data in the session.Time out the session when no longer used.
