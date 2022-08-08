@@ -1,0 +1,44 @@
+Ans1. He can initialize it as "FINAL" keyword then he can store these as constant in java.
+
+Ans2. The correct data type will be "char" which stands for character because Grades that will come will be A,B,C,D,E. 
+
+Ans3. To initialize the complete matrix data by which he can get the data by entering class name and roll number is:- int[][] a = new int[12][n];
+
+Ans4. He can do it by calling refernce of that class.
+
+Ans5. Some Exceptions in java are ArthmeticException, ArrayIndexOutOfBounds, IOException, NullPointerException, ClassNotFoundException.
+
+Ans6. Throwable class is tha parent class of all the Exception and Errors in Java.
+
+Ans7. We can handle Exception by using try catch block where the line of code which may throw exception is written in try block. Finally block is used to close the connection in case of any Exception or error. The code in finnally block always executes no matter what.
+
+Ans8. // Sum of two matrices using Iterative approach:
+
+    public static void matrixAddition(int[][] a, int[][] b)
+    {
+        int[][] sum = new int[a.length][a[0].length];
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++)
+                sum[i][j] = a[i][j] + b[i][j];
+        }
+        
+        // printing the matrix
+        printMatrix(sum);
+    }
+
+Ans9. The purpose of using Serialization is: It is easy to customize, it saves object's of stateother than that by default  string and wrapper classes is implement by the serializable interface ,It has not method or data member.
+
+Ans10. They are looking to store the metrics data in collection so roll number and class should be unique and upon entering the same data value should be overridden. what collection they should use.
+       They can use a HashSet<String> to maintain a collection of unique objects. If the Integer values in your map are important, then you can instead use the containsKey method of maps to test whether your key is already in the map.
+
+Ans11. Now they have to sort the data as well as the different methods available to sort it in collection and write a generic method to solve collection framed in Ans10.
+       Convert HashSet to a list and then sort that List by using Collections.sort() method. One drawback of using this option to sort a HashSet is that you get the result as list.
+
+Ans12. They faced a very challenging situation here. Now Each class teacher will be entering their students' data concurrently so how can Rakesh and John make their collection thread safe.
+       Thread-safety through the Synchronized property, which returns a thread-safe wrapper around the collection
+
+Ans13. There are two ways to create a thread: By extending Thread classor By implementing Runnable interface. A Thread perform various task - New, Active , Blocked / Waiting, Timed Waiting ,Terminated.
+
+Ans14. Mutual Exclusion or Hold and Wait or No preemption and Circular wait also with this we can prevant  dead lock.
+
+Ans15. Using the java. lang. ref package, you can work with the garbage collector it free up space it is a part of java.lang package
