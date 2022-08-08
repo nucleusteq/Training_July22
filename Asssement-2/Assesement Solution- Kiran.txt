@@ -1,0 +1,32 @@
+1 Variables or 
+2 Char "we use char because char data type holds only one variable"
+3 char[][] matrix= new int[11] [01]
+	Scanner sc= new scanner;
+	int class= sc.nextInt;
+	int roll_num= sc.nextLine;
+	System.out.println(int matrix[class][roll_num]);
+4 constructor 
+5 Built-in Exceptions. Checked Exception. Unchecked Exception.
+  User-Defined Exceptions.
+
+6 System Exception class is the base class for all predefined system exception.All exception classes are subtypes of the java.lang.Exception class. The Exception class is a subclass of the Throwable class. Other than the Exception class there is another subclass called Error which is derived from the Throwable class.
+7 Program statement that creats a exception are contained within a try block.If exception creates within in a try block it is thrown .
+8  public class iterate {
+    public static void main(String[] args) {
+        int row=10,column=12;
+        int matrix[][]=new int [row][column];
+        for (int i =0;i<column;i++){
+            for ( int j=0;j<row;j++){
+                System.out.println(matrix[i][j]);
+
+            }
+        }
+    }
+}
+9
+10
+11
+12
+13 There are two ways we can create a thread in multithreading in java programs that is by extending thread class and implementing Runnable interface.
+14 Avoid Unneccesaary locks ,Nested locks, using thread.join() method , use lock ordering ,locktime-out.
+15 Quick fix and Mannually enable or disabled code.
