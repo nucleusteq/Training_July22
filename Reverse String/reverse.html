@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<body>
+
+    <p id="reverse">My name is Vanshika Saigal.</p>
+    <button onclick="ReverseString()">CLICK HERE</button>
+    <script>
+        function ReverseString() {
+
+            var text= document.getElementById("reverse").innerHTML;
+           
+             
+            // Take empty array revArray
+            const revArray = [];
+           
+            const length = text.length - 1;
+             
+            // Looping from the end
+            for(let i = length; i >= 0; i--) {
+                revArray.push(text[i]);
+            }
+             
+            // Joining the array elements
+            var result= revArray.join('');
+           
+            document.write(result);
+        }
+         
+       
+        </script>
+</body>
+
+</html>
