@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: rgba(214, 144, 21, 0.627);
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #d6e9eb;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+<marquee><h1>Demonstration of Flexible Boxes</h1></marquee>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+  </div>
+  
+</body>
+</html>
+
