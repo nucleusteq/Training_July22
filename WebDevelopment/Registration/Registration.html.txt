@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="C:\GIT_NEW\Training_July22\style.css">
+    <title>Registration</title>
+
+    <style>
+        body {
+    font-family: "Poppins";
+    font-weight: 500;
+  }
+  p{
+    position: relative;
+  }
+  p::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 4%;
+    left: 0;
+    height: 3px;
+    
+    background: linear-gradient(to right, #71b7e6, #9b59b6);
+  }
+      #grad1 {
+    height: 1200px;
+    background: linear-gradient(to right, #71b7e6, #9b59b6);
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    right: 30%;
+    width:650px;
+    margin:30px auto;
+    margin-top: 70px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input[type=email], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input[type=password], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+  .mainLoginInput::placeholder{
+       font-family: "Poppins";
+       font-weight: 400;
+  }
+  .parent {
+    display: flex;
+    flex-direction:row;
+  }
+  
+  .column {
+    flex: 1 1 0px;
+   
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .block {
+    display: block;
+    width: 100%;
+    border: none;
+    background: linear-gradient(to right, #71b7e6, #9b59b6);
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Poppins";
+  }
+  .block:hover {
+    background: linear-gradient(to left, #71b7e6, #9b59b6);
+    color: white;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: grey;
+  }
+    </style>
+</head>
+
+
+<body>
+<div id="grad1">
+<div>
+    <div class="container">
+    
+    <p style="font-size: larger;">Registration</p>
+    <br>
+
+        <div class="parent">
+            <div class="column">
+                <div>Full Name</div>
+        <div><input type="text" class="mainLoginInput" placeholder="Enter Your Name"></div>
+        <br>
+        <div>Email</div>
+        <div><input type="email" class="mainLoginInput" placeholder="Enter Your Email"></div>
+        <br>
+        <div>Password</div>
+        <div><input type="password" class="mainLoginInput" placeholder="Enter Your Password"></div>
+            </div>
+            <div class="column">
+                <div>Username</div>
+        <div><input type="text" class="mainLoginInput" placeholder="Enter Your Username"></div>
+        <br>
+        <div>Phone Number</div>
+        <div><input type="email" class="mainLoginInput" placeholder="Enter Your Number"></div>
+        <br>
+        <div>Confirm Password</div>
+        <div><input type="password" class="mainLoginInput" placeholder="Confirm Your Password"></div></div>
+           
+        </div>
+        <div style="font-size: large;">Gender</div>
+        <br>
+        <div class="parent">
+            <div class="column"><input type="radio"> <label for="gender">Male</label></div>
+            <div class="column"><input type="radio" name="" id=""><label for="gender">Female</label></div>
+            <div class="column"><input type="radio" name="" id=""><label for="gender">Prefer not to say</label></div>
+
+        </div>
+        <br>
+        <button type="submit" class="block">Register</button>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
