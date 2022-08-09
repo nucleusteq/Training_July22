@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate</title>
+    <style>
+        body {
+            padding: 20%;
+            background-color: blue;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-family: 'Poppins';
+            font-size: 28px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    
+        #rot:hover{
+            animation: rot_name 2s linear;
+            color: rgb(249, 241, 3);
+        }
+    
+        @keyframes rot_name{
+            0%{
+                transform: rotate(0deg);
+            }
+            90%{
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+        <h3 id="rot">lets rotate</h3>
+</body>
+</html>
+
+
