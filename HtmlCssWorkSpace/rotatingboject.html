@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Rotate text 360 degrees</title>
+	
+</head>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: serif;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		background-color: #253cb0;
+	}
+
+	div {
+		content: '';
+		font-size: 2em;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	h2:hover{
+		animation: rotate 10s linear;
+        color: aliceblue;
+	}
+
+	@keyframes rotate{
+		0%{
+			transform: rotate(0deg);
+		}
+		
+		100%{
+			transform: rotate(360deg);
+		}
+	}
+</style>
+
+<body>
+	<div>
+		<h2>YUVRAJ SINGH BHADOURIA</h2>
+	</div>
+</body>
+</html>

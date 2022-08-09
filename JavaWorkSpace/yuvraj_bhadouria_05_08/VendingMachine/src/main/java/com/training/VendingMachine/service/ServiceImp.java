@@ -1,105 +1,54 @@
-package com.training.VendingMachine.service;
+import java.util.Random;
 
-import java.util.ArrayList;
+class Weather implements Runnable{
+    public void run(){
+        String arr[]={"Cloudy","Raining","Sunny","Huimd","Thunderstorm","Clear"};
+        Random random = new Random();
+        int index = random.nextInt(arr.length);
 
-import org.springframework.stereotype.Repository;
-
-import com.training.VendingMachine.domain.Item;
-
-import java.util.*;
-
-@Repository
-public class ServiceImp implements VendingService {
-static List<Item> items;
-
-public  ServiceImp() {
-	items = new ArrayList<Item>();
-	
-	items.add(new Item(1, "Coca cola",30,10));
-	items.add(new Item(2, "Sprite",25,4));
-	items.add(new Item(3, "Fanta",25,2));
-	items.add(new Item(4, "Kurkure",10,7));
-	items.add(new Item(5, "Lays",15,8));
-	items.add(new Item(6, "Cookie",20,7));
-	items.add(new Item(7, "Fruti",10,8));
-	items.add(new Item(8, "5star",5,10));
-	items.add(new Item(9, "Munch",10,7));
-	items.add(new Item(10, "DiaryMilk",30,0));
+        System.out.println(Thread.currentThread().getName()+" Weather:"+index);
+        System.out.println();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
-	
+class Assesment{
+    public static void main(String[] args) {
+        Weather weather1=new Weather();
+		Thread  w1 = new Thread(weather1);
+        Weather weather2=new Weather();
+		Thread  w2 = new Thread(weather2);
+        Weather weather3=new Weather();
+		Thread  w3 = new Thread(weather3);
+        Weather weather4=new Weather();
+		Thread  w4 = new Thread(weather4);
+        Weather weather5=new Weather();
+		Thread  w5 = new Thread(weather5);
+        Weather weather6=new Weather();
+		Thread  w6 = new Thread(weather6);
+        Weather weather7=new Weather();
+		Thread  w7 = new Thread(weather7);
 
-	@Override
-	public List<Item> getAllItem() {
-		// TODO Auto-generated method stub
-		return items;
-	}
+        w1.setName("Indore");
+        w2.setName("Gwalior");
+        w3.setName("Bhopal");
+        w4.setName("Delhi");
+        w5.setName("Banglore");
+        w6.setName("Mumbai");
+        w7.setName("Punjab");
 
-	@Override
-	public String buyItem(Integer id,Integer cash) {
-		String s="";
-		if(id <=0 || id>10 || cash<=0) {
-			s="Invalid id or cash amount";
-			return s;
-		}
-		else {
-		int rs50 =0,rs20=0,rs10=0,rs5=0;
-		for(Item i:items) {
-			if(i.getId() == id) {
-				
-				
-			if(i.getQuantity() ==0) {
-				s="Item has been souled out!";
-			
-			}
-				else if(i.getPrice()==cash) {
-				System.out.println("Collect your "+i.getName());
-				i.setQuantity(i.getQuantity()-1);
-				 s = "Collect your "+i.getName();
-				
-			}
-			else if(cash>i.getPrice()) {
-				int rem =cash-i.getPrice();				
-				cash=cash-i.getPrice();
-				while(cash>=50) {
-					rs50 = cash/50;
-					cash=cash%50;
-					break;
-				}
-				while(cash>=20) {
-					rs20 = cash/20;
-					cash=cash%20;
-				}
-				while(cash>=10) {
-					rs10 = cash/10;
-					cash=cash%10;
-				}
-				while(cash>=5) {
-					rs5 = cash/5;
-					cash=cash%5;
-				}
+        w1.start();
+        w2.start();
+        w3.start();
+        w4.start();
+        w5.start();
+        w6.start();
+        w7.start();
 
-				s ="Collect your "+i.getName() +" And your remaning amount Rs."+rem+" in denomination \n";
-				if(rs50>0)
-				s+="Rs50:"+rs50+" note"+"\n" ;
-				if(rs20>0)
-				s+="Rs20:"+rs20+" note"+"\n" ;
-				if(rs10>0)
-				s+="Rs10:"+rs10+" note"+"\n" ;
-				if(rs5>5)
-				s+="Rs5:"+rs5+" coin"+"\n" ;
-				
-				i.setQuantity(i.getQuantity()-1);
-			
-			}
-			else {
-				 s ="Not enough cash to buy "+i.getName()+" Collect your money back Rs."+ cash;
-			
-			}
-			}
-		}
-		
-	}	
-		return s;
-	}
+        
+
+    }
 }
-
