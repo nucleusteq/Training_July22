@@ -1,0 +1,84 @@
+#container
+
+{
+
+    width: 400px;
+    height: 400px; margin: 200px auto;
+    perspective: 800px;
+
+}
+body
+{ 
+    
+    background-color: grey;
+}
+#box
+{
+    width: 400px;
+    transform-style: preserve-3d;
+    color: orange; font: 88px impact;
+    text-align: center; 
+    animation: rotate 15s linear infinite;
+}
+
+#box div
+{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    opacity: .8;
+}
+
+#front
+{
+    transform: translatez (200px);
+    background-color: #1f122c;
+}
+
+#back
+{
+    transform:rotateY(180deg) translateZ(200px);
+    background-color: #1f122c;
+}
+
+#left
+{
+    transform:rotateY(-90deg) translateX(-200px); 
+    background-color: #1f122c;
+    transform-origin: left;
+
+} 
+#right
+{
+    transform:rotateY(90deg) translateX(280px);
+    background-color: #1f122c; transform-origin: right;
+
+} 
+
+#top
+{
+    transform:rotateX(-90deg) translateY(-200px); background-color: #1f122c;
+    transform-origin: top;
+
+} 
+
+#bottom
+{
+    transform:rotateX(98deg) translateY(200px);
+    background-color: #1f122c;
+    transform-origin: bottom;
+}
+
+@keyframes rotate{
+0%{
+
+transform:rotateY(8deg);
+
+}
+
+100%{
+    transform: rotateY(360deg);
+}
+
+
+}
