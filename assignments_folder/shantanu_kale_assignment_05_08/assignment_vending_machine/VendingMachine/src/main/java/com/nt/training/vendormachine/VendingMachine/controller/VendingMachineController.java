@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.nt.training.vendormachine.VendingMachine.model.Product;
+import com.nt.training.vendormachine.VendingMachine.model.ReturnProduct;
 import com.nt.training.vendormachine.VendingMachine.service.VendingMachineService;
 
 @RestController
@@ -24,9 +25,9 @@ public class VendingMachineController {
 	}
 	
 	@RequestMapping (path="/buy/{id}/{amount}",method=RequestMethod.GET)
-	public @ResponseBody Product buyProduct(@PathVariable("id") Integer id ,
+	public @ResponseBody ReturnProduct buyProduct(@PathVariable("id") Integer id ,
 			@PathVariable("amount")  Integer amount){
-		Product result = vendingMachineService.buyProduct(id,amount);
+		ReturnProduct result = vendingMachineService.buyProduct(id,amount);
 		return result;
 }
 }

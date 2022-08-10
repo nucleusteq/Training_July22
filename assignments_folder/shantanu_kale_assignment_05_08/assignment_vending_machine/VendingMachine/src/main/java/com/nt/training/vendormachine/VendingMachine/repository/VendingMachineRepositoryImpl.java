@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.nt.training.vendormachine.VendingMachine.model.Product;
+import com.nt.training.vendormachine.VendingMachine.model.ReturnProduct;
 import com.nt.training.vendormachine.VendingMachine.repository.impl.VendingMachineRepository;
 @Repository
 public class VendingMachineRepositoryImpl implements VendingMachineRepository{
@@ -34,7 +35,7 @@ public class VendingMachineRepositoryImpl implements VendingMachineRepository{
 	}
 
 	@Override
-	public Product buyProduct(Integer id, Integer amount) {
+	public ReturnProduct buyProduct(Integer id, Integer amount) {
 		// TODO Auto-generated method stub
 		int i=0;
 		int qty;
@@ -42,7 +43,7 @@ public class VendingMachineRepositoryImpl implements VendingMachineRepository{
 		String denomination;
 		int shortAmount = 0;
 		
-		Product prod = new Product();
+		ReturnProduct prod = new ReturnProduct();
 		while(products.size()>i) {
 			Product p = products.get(i);
 			if(id==p.getId())
@@ -57,7 +58,11 @@ public class VendingMachineRepositoryImpl implements VendingMachineRepository{
 						amountLeft = (amount - p.getPrice());
 						denomination = calculateDenomination(amountLeft);
 						
-						System.out.println("Item purchased"+denomination);
+						prod.setStatus("Item purchase successful");
+						prod.setDenomination(denomination);
+						prod.setItemid(p.getId());
+						prod.setItemprice(p.getPrice());
+						
 						return prod;
 					}
 					else 
