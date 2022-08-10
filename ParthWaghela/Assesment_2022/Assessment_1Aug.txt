@@ -1,0 +1,38 @@
+1.  LINUX
+1.1 : Sudo chown -R name(name of the person who want access) /home/rahul/fonancial_report.txt
+      
+1.2 : To read the file-
+     cat  financial_report.txt
+     to edit –
+     vim financial_report.txt (give permission to changes)
+     esc :qw! (helps to save the changes)
+1.3  : command is-
+     scp <financial_report.txt> <user_name> @<system_ip> :/home/rahul /financial_report.txt 
+1.4  :  
+      -r w :- says that  user has read and write permissions
+      -r :- says group has only read permission
+      -r-x :- says others have read and execute permission
+1 – it is the execute permission
+
+1.5 : 777 - read write and execute (to all - user, group and other )
+      660 -read write permission to user, read write permission to group , no permission to other
+      475 -read permission to user, read write execute permission to group and read execute permission to other.
+      647 -read write permission to user,read permission to group , read write execute permission other.
+
+1.6 : change directory - cd directory name
+      remove file - rm filename
+      rename file and directory - rmdir
+
+
+2 : GIT
+
+2.1 : For  all the changes from main branch command will be-  git pull origin <main branch name>   Example - git pull origin NucleusTeq   (where NucleusTeq is the name of the main branch) 
+2.2 : In a situation where  conflict occurs at the time of pushing the code, First we have to pull the latest updated code and then merge with the code then again pull the code then we are good to go with  commit  our changes  
+       - git pull origin NucleusTeq
+       - git merge 
+       - git pull origin NucleusTeq   
+       - git add .
+       - git status
+       - git commit -m "xyz"
+       - git push origin NucleusTeq
+2.3 : 
