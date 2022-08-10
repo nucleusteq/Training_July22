@@ -1,0 +1,12 @@
+3.2
+import java.time.;
+public class DateOfBirth
+{
+public static void main(String args[])
+{
+LocalDate LD = LocalDate.of(2022, 19,11);
+LocalDate CD = LocalDate.now();
+Period p1 = Period.between(dob, curDate);
+System.out.printf(Your age is %d years %d months and %d days., period.getYears(), period.getMonths(), period.getDays());
+}
+}
