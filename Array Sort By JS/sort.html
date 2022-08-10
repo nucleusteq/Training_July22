@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array</title>
+</head>
+<body>
+    <h3>Sorting Array</h3>
+    <p id="num">40, 100, 1, 5, 25, 10</p>
+    <br>
+    <button onclick="increase_sort()">Click to sort in increasing order</button>
+    <button onclick="decrease_sort()">Click to sort in decreasing order</button>
+    <script>
+        function increase_sort(){
+            const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+document.getElementById("num").innerHTML = points;
+        }
+        function decrease_sort(){
+            const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+document.getElementById("num").innerHTML = points;
+        }
+
+    </script>
+</body>
+</html>
