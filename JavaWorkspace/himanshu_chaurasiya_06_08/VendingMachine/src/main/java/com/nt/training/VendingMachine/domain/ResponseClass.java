@@ -1,25 +1,26 @@
 package com.nt.training.VendingMachine.domain;
 
+import java.util.List;
 
 public class ResponseClass {
 
 	private String status=null;
-	private String denomination=null;
+	private Integer snackId=null;
 	private String snack=null;
 	private Integer price=null;
 	private String description=null;
-	
+	private List<DenominationResponse> denomination=null;
 	public String getStatus() {
 		return status;
 	}
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getDenomination() {
-		return denomination;
+	public Integer getSnackId() {
+		return snackId;
 	}
-	public void setDenomination(String denomination) {
-		this.denomination = denomination;
+	public void setSnackId(Integer snackId) {
+		this.snackId = snackId;
 	}
 	public String getSnack() {
 		return snack;
@@ -39,25 +40,36 @@ public class ResponseClass {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public ResponseClass(String status, String denomination, String snack, Integer price, String description) {
+	public List<DenominationResponse> getDenomination() {
+		return denomination;
+	}
+	public void setDenomination(List<DenominationResponse> denomination) {
+		this.denomination = denomination;
+	}
+	@Override
+	public String toString() {
+		return "ResponseClass [status=" + status + ", snackId=" + snackId + ", snack=" + snack + ", price=" + price
+				+ ", description=" + description + ", denomination=" + denomination + "]";
+	}
+	public ResponseClass(String status, Integer snackId, String snack, Integer price, String description,
+			List<DenominationResponse> denomination) {
 		super();
 		this.status = status;
-		this.denomination = denomination;
+		this.snackId = snackId;
 		this.snack = snack;
 		this.price = price;
 		this.description = description;
+		this.denomination = denomination;
 	}
 	public ResponseClass() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	@Override
-	public String toString() {
-		return "ResponseClass [status=" + status + ", denomination=" + denomination + ", snack=" + snack + ", price="
-				+ price + ", description=" + description + "]";
-	}
+
 	
 	
+		
 }
+
 
 

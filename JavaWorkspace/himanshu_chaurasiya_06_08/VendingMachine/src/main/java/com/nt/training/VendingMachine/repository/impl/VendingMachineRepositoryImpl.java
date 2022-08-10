@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import com.nt.training.VendingMachine.domain.DenominationResponse;
 import com.nt.training.VendingMachine.domain.ResponseClass;
 import com.nt.training.VendingMachine.domain.VendingMachine;
 import com.nt.training.VendingMachine.repository.VendingMachineRepository;
@@ -14,6 +15,7 @@ import com.nt.training.VendingMachine.repository.VendingMachineRepository;
 public class VendingMachineRepositoryImpl implements VendingMachineRepository{
 
 	static List<VendingMachine> vendingMachine;
+	static List<DenominationResponse> denomResponse;
 
 	public VendingMachineRepositoryImpl() {
 		vendingMachine = new ArrayList<VendingMachine>();
@@ -36,7 +38,7 @@ public class VendingMachineRepositoryImpl implements VendingMachineRepository{
 		int i=0;
 		int qty;
 		int remainAmount = 0;
-		String denom;
+		List<DenominationResponse> denom;
 		int shortAmount = 0;
 
 		ResponseClass obj = new ResponseClass();
@@ -54,8 +56,9 @@ public class VendingMachineRepositoryImpl implements VendingMachineRepository{
 						remainAmount = (amount - vendMach.getSnackPrice());
 						denom = calculateDenom(remainAmount);
 						
-						obj.setStatus("Success! You bought and item.");
-						obj.setDenomination(denom);
+						obj.setStatus("Success! You bought an item.");
+						obj.setDenomination(denomResponse);
+						obj.setSnackId(vendMach.getId());
 						obj.setSnack(vendMach.getSnackName());
 						obj.setPrice(vendMach.getSnackPrice());
 						obj.setDescription(vendMach.getSnackDesc());
@@ -85,9 +88,8 @@ public class VendingMachineRepositoryImpl implements VendingMachineRepository{
 	}
 	
 	
-	String calculateDenom(int amount) {
-		String calc="";
-		
+	public List<DenominationResponse> calculateDenom(int amount) {
+		denomResponse = new ArrayList<DenominationResponse>();
 		{
 	        int[] notes = new int[]{20, 10, 5, 1 };
 	        int[] noteCounter = new int[4];
@@ -101,11 +103,11 @@ public class VendingMachineRepositoryImpl implements VendingMachineRepository{
 	      
 	        for (int i = 0; i < 4; i++) {
 	            if (noteCounter[i] != 0) {
-	                calc += notes[i]+" INR " + "x "+ noteCounter[i]+" + ";
+	            	denomResponse.add(new DenominationResponse(notes[i],noteCounter[i]));
 	            }
 	        }
 	    }
-		return calc;
+		return denomResponse;
 	}
 
 }
