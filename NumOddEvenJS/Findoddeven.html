@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="num" id="num" placeholder="Enter a number">
+    <br><br>
+    <button onclick="find()">Click Here to find the number is odd or even </button>
+    <script>
+        function find(){
+           
+var input=document.getElementById("num").value
+if(input %2==0){
+    alert(`${input} is even`);
+}else {
+    alert(`${input} is odd`);
+}
+        }
+    </script>
+</body>
+</html>
