@@ -1,4 +1,4 @@
-package com.nt.training.VendingMachine;
+package com.nt.training.vendormachine.VendingMachine;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
