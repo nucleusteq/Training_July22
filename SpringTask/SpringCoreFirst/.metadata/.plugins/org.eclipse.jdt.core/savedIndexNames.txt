@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\opera\Desktop\AYUSH TRAINING\Spring\SpringCoreFirst\.metadata\.plugins\org.eclipse.jdt.core
+3102715728.index
+2756308033.index
+1865797976.index
