@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,11 +25,9 @@ public class VendingMachineController {
 		return vendingMachineService.getAllProduts();
 	}
 	
-	@RequestMapping (path="/buy/{id}/{amount}",method=RequestMethod.GET)
-	public @ResponseBody ResponseClass buyProduct(@PathVariable("id") Integer id ,
-			@PathVariable("amount")  Integer amount){
+	@RequestMapping (path="/buy",method=RequestMethod.GET)
+	public @ResponseBody ResponseClass buyProduct(@RequestParam(name = "id") Integer id, @RequestParam Integer amount) {
 		ResponseClass result = vendingMachineService.buyProduct(id,amount);
 		return result;
 	}
-	
 }
