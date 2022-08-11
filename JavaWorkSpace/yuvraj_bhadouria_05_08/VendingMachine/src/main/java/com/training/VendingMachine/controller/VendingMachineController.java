@@ -21,7 +21,7 @@ import com.training.VendingMachine.service.VendingService;
 public class VendingMachineController {
 	
 	@Autowired
-	Private VendingService vendingService;
+	private VendingService vendingService;
 	
 	@RequestMapping(path="/getItem",method=RequestMethod.GET)
 	public @ResponseBody List<Item> getAllItem(){
