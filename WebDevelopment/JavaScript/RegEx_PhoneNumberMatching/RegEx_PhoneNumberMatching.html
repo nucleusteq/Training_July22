@@ -1,0 +1,41 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Phone Number Validation</title>
+  <script>
+    function CheckPhoneNumber() 
+{ 
+  var input = document.getElementById("text1").value;
+
+var phone= /^[6789]\d{9}$/;
+
+if(input.match(phone)) 
+{ 
+alert('True!')
+return true;
+}
+else
+{ 
+alert('False!')
+return false;
+}
+}
+  </script>
+</head>
+
+<body>
+<h2>Input Phone Number and Submit </h2>
+<ul>
+<li>Must be 10 digits only. </li>
+<li>Must start with 6,7,8,9 only.</li>
+</ul>
+<form name="form1" action="#">
+Enter Phone Number: <input type='text' name='text1' id ='text1'/><br><br>
+<input type="submit" name="submit" value="Submit" onclick="CheckPhoneNumber()" />
+<!-- <button onclick="CheckPassword('')"> Click Here!</button> -->
+</body>
+
+</html>

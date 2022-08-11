@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sorting</title>
+</head>
+<body>
+    <h3>Sorting Array Elements</h3>
+    <p>Numbers to be sort</p>
+    <p id="num">40, 100, 10, 50, 20, 80</p>
+    <br>
+    <button onclick="asc_sort()">Sorting in Ascending Order</button>
+    <button onclick="desc_sort()">Sorting in descending Order</button>
+    <script>
+        function asc_sort(){
+            const elements = [40, 100, 10, 50, 20, 80];
+elements.sort(function(a, b){return a-b});
+document.getElementById("num").innerHTML = elements;
+        }
+        function desc_sort(){
+            const elements = [40, 100, 10, 50, 20, 80];
+elements.sort(function(a, b){return b-a});
+document.getElementById("num").innerHTML = elements;
+        }
+
+    </script>
+</body>
+</html>
