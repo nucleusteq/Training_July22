@@ -1,13 +1,33 @@
 package com.nt.training.VendingMachine.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="product_details")
 public class VendingMachine {
 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
 	private Integer id;
+	
+	@Column(name="snack_name")
 	private String snackName;
+	
+	@Column(name="snack_quantity")
 	private Integer qtyAvailable;
+	
+	@Column(name="snack_price")
 	private Integer snackPrice;
+	
+	@Column(name="snack_description")
 	private String snackDesc;
+	
 	public Integer getId() {
 		return id;
 	}

@@ -11,4 +11,6 @@ public interface VendingMachineService {
 
 	public ResponseClass buyProduct(Integer id, Integer amount);
 
+	public VendingMachine addProducts(VendingMachine vendingMach);
+
 }
