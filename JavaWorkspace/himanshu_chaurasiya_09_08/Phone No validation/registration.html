@@ -46,9 +46,10 @@
         }
 
         .col input {
-            border: 1px solid #bbb7b7;;
+            border: 1px solid #bbb7b7;
+            ;
             border-style: outset;
-            box-sizing: 25 ;
+            box-sizing: 25;
             height: 35px;
             border-radius: 10px;
 
@@ -66,10 +67,10 @@
         #form_work .col input,
         label {
             display: block;
-    width: 95%;
-    padding-bottom: 5px;
-    margin-top: 1px;
-    margin-bottom: 8px;
+            width: 95%;
+            padding-bottom: 5px;
+            margin-top: 1px;
+            margin-bottom: 8px;
         }
 
         #gender_id span {
@@ -102,7 +103,7 @@
                     <label for="email">Email</label>
                     <input type="email" name="email" placeholder="Enter your email">
                     <label for="password">Password</label>
-                    <input type="password" name="password" placeholder="Enter your password">
+                    <input id="pass" type="password" name="password" placeholder="Enter your password">
                 </div>
                 <div id="col2" class="col">
                     <label for="uname">User Name</label>
@@ -110,7 +111,8 @@
                     <label for="pnumber">Phone Number</label>
                     <input id="valid" type="text" name="pnumber" placeholder="Enter your Phone Number">
                     <label for="Confirm_password">Confirm Password</label>
-                    <input type="password" name="Confirm_password" placeholder="Enter your Confirm password">
+                    <input id="conf_pass" type="password" name="Confirm_password"
+                        placeholder="Enter your Confirm password">
                 </div>
                 <div id="gender_id">Gender<br>
                     <span><input type="radio" name="gender" value="male">Male</span>
