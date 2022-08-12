@@ -19,13 +19,13 @@ public class VendingMachineController {
 	VendingMachineService vendingMachineService;
 	
 	@RequestMapping(path="/getAllProduct",method=RequestMethod.GET)
-	public @ResponseBody List<Product> getAllProducts(){
+	public List<Product> getAllProducts(){
 //		System.out.println("OUTPUT");
 		return vendingMachineService.getAllProducts();
 	}
 	
 	@RequestMapping (path="/buy/{id}/{amount}",method=RequestMethod.GET)
-	public @ResponseBody ReturnProduct buyProduct(@PathVariable("id") Integer id ,
+	public ReturnProduct buyProduct(@PathVariable("id") Integer id ,
 			@PathVariable("amount")  Integer amount){
 		ReturnProduct result = vendingMachineService.buyProduct(id,amount);
 		return result;
