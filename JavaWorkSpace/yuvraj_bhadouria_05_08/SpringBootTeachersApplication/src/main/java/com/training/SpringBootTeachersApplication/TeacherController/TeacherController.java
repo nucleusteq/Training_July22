@@ -17,34 +17,32 @@ import com.training.SpringBootTeachersApplication.service.TeacherService;
 @RestController
 public class TeacherController {
 
-
 	@Autowired
-	TeacherService teacherService;
-	
-	@RequestMapping(path = "/getTeacher" , method = RequestMethod.GET)
-	public @ResponseBody List<Teacher> getAllTeacher(){
+	private TeacherService teacherService;
+
+	@RequestMapping(path = "/getTeacher", method = RequestMethod.GET)
+	public List<Teacher> getAllTeacher() {
 		return teacherService.getAllTeacher();
 	}
-	
-	@RequestMapping(path = "/save" , method = RequestMethod.POST)
-	public @ResponseBody Teacher saveTeacher(@RequestBody Teacher teacher) {
+
+	@RequestMapping(path = "/save", method = RequestMethod.POST)
+	public Teacher saveTeacher(@RequestBody Teacher teacher) {
 		return teacherService.saveTeacher(teacher);
 	}
 
-	@RequestMapping(path = "/delete/{id}" ,  method =RequestMethod.DELETE)
+	@RequestMapping(path = "/delete/{id}", method = RequestMethod.DELETE)
 	public String deleteStudent(@PathVariable("id") Integer id) {
-		System.out.println("id:"+id);
+		System.out.println("id:" + id);
 		return teacherService.deleteTeacher(id);
 	}
-	
-	
-	@RequestMapping(path = "/update/{id}" , method = RequestMethod.PUT)
-	public @ResponseBody Teacher updateStudent(@PathVariable("id") Integer id , @RequestBody Teacher teacher) {
+
+	@RequestMapping(path = "/update/{id}", method = RequestMethod.PUT)
+	public Teacher updateStudent(@PathVariable("id") Integer id, @RequestBody Teacher teacher) {
 		return teacherService.updateTeacher(id, teacher);
 	}
-	
-	@RequestMapping(path = "/getTeacherById" ,  method=RequestMethod.GET)
-	public Teacher getTeacherById(@RequestParam("id") Integer id){
+
+	@RequestMapping(path = "/getTeacherById", method = RequestMethod.GET)
+	public Teacher getTeacherById(@RequestParam("id") Integer id) {
 		return teacherService.getTeacherById(id);
 	}
 }

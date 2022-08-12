@@ -5,13 +5,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="teacher_table")
+@Table(name = "teacher_table")
 public class Teacher {
 	@Id
 	private Integer id;
 	private String firstName;
 	private String lastName;
-	
+
 	public Teacher() {
 		super();
 		// TODO Auto-generated constructor stub
