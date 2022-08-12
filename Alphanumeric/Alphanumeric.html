@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		alphanumeric Check
+	</title>
+</head>
+
+
+	
+	
+	
+	
+	<form id = "formElement">
+		Input: <input id = "input1" type = "text" />
+	</form>
+	
+	<br>
+	
+	<button onclick = "alphanumeric()">
+		click here
+	</button>
+
+	<p id = "boolean" style = 
+        "font-size: 24px; "> 
+    </p>
+	
+	
+	<script>
+		var el_up = document.getElementById('alpha');
+		var el_down = document.getElementById('boolean');
+		var input = document.getElementById('input1');
+		
+		el_up.innerHTML = "Click on the button to "
+					+ "validate alphanumeric input.";	
+		
+		function alphanumeric() {
+			var val = input.value;
+			var RegEx = /[^a-z\d]/i;
+			var Valid = !(RegEx.test(val));
+			el_down.innerHTML = Valid;
+		}
+	</script>
+</body>
+
+</html>
+
+
+
+  
