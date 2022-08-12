@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODD And Even</title>
+</head>
+<body> 
+    <h2 style="text-align:center;">Find ODD And Even Number</h2>
+    <label>Enter the Number</label><br/>
+    <input type="number" name="" id="Odd Even" onkeyup="isCheck()">
+<span id ="show message"></span>
+<script> 
+       function isCheck(){
+        var num=documenr.getElementById('ODD Even').value;
+        if(num % 2==0){
+            document.getElementById('showmsg').
+            innerHTML ="Hurray!Number" +num+ "is an even number";
+        }
+        else{
+            document,getElementById('showmsg'). 
+            innerHTML ="Oh No! Number" +num+ "is not an even number";
+        }
+              if(num == ""){
+                document.getElementById('showing').
+                innerHTML = ""; 
+              }
+
+        
+       }
+</script>
+</body>
+</html>
