@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Object Rotate 360</title>
+    <style>
+        /* img{
+            animation-name:spin ;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        } */
+        @keyframes spin {
+            from{transform:  rotate(0deg);}
+            to{ transform: rotate(360deg);}
+        }
+    </style>
+    <script>
+        function startFan(){
+            document.getElementById("fan").style.animationName="spin";
+            document.getElementById("fan").style.animationDuration="2s";
+            document.getElementById("fan").style.animationIterationCount="infinite";
+            document.getElementById("fan").style.animationTimingFunction="linear";
+        }
+        function stopFan(){
+            document.getElementById("fan").style.animationName="spin";
+            document.getElementById("fan").style.animationDuration="5s";
+            document.getElementById("fan").style.animationIterationCount="1";
+            document.getElementById("fan").style.animationTimingFunction="linear";
+            document.getElementById("fan").style.animationDelay="2s";
+        }
+    </script>
+</head>
+<body>
+    <img src="fan.png" id="fan">
+    <button id="start" onclick="startFan()">Start Fan</button>
+    <button id="stop" onclick="stopFan()"> Stop Fan</button>
+</body>
+</html>
