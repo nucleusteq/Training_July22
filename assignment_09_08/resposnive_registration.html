@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="responsive_registration.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <div class="container"><span id="re_underline">Re</span>gistration
+        <div id="formContent">
+            <form>
+                <div class="column" id="part1">
+                    <div class="input-container" data-error="" id="input-container1">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" placeholder="Enter your name" id="fname"  name="fullName" oninput="myFunction('fname');">
+                    </div>
+                    <div class="input-container" data-error="" id="input-container2">       
+                        <label for="email">Email</label><br>
+                        <input type="email" placeholder="Enter your email" name="email" id="email" oninput="myFunction('email');"><br>
+                    </div>
+                    <div class="input-container" data-error="" id="input-container3">
+                        <label for="password">Password</label><br>
+                        <input type="password" placeholder="Enter your password" name="password" id="password" oninput="myFunction('password')"><br>
+                   </div>         
+                </div>
+
+                <div class="column" id="part2">
+                    <div class="input-container" data-error="" id="input-container4">
+                         <label for="userName">User Name</label><br>
+                         <input type="text" placeholder="Enter your user name" id="userName" name="userName" oninput="myFunction('userName')"><br>
+                    </div>   
+                    <div class="input-container" data-error="" id="input-container5">
+                        <label for="phoneNumber">Phone Number</label><br>
+                        <input type="email" placeholder="Enter your phone number" name="phoneNumber" id="phoneNumber" oninput="myFunction('phoneNumber');"><br>
+                   </div> 
+                   <div class="input-container" data-error="" id="input-container6">    
+                        <label for="confirmPassword">Confirm Password</label><br>
+                        <input type="password"placeholder="Enter your password" name="confirmPassword" id="confirmPassword" oninput="myFunction('confirmPassword');"><br>
+                   </div>
+                </div>
+                <div style="clear: both;"></div>
+
+                <div id="gender">Gender
+                    <div>
+                        <div class="gender-input-container">    
+                            <input type="radio" name="gender">
+                            <label for="gender">Male</label>
+                        </div> 
+                        <div class="gender-input-container">   
+                            <input type="radio" name="gender">
+                            <label for="gender">Female</label>
+                        </div>   
+                        <div class="gender-input-container"> 
+                            <input type="radio" name="gender">
+                            <label for="gender">Prefer not to say</label>
+                        </div>
+                    </div>    
+                </div>
+                <input type="submit" id="formSubmit" onclick="">
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        
+    </script>    
+</body>
+</html>
