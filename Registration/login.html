@@ -1,61 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-    <title>Registration</title>
-</head>
-
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+   </head>
 <body>
-<div id="grad1">
-<div>
-    <div class="container">
-    
-    <p style="font-size: larger;">Registration</p>
-    <br>
-
-        <div class="parent">
-            <div class="column">
-                <div>Full Name</div>
-        <div><input type="text" class="mainLoginInput" placeholder="Enter Your Name"></div>
-        <br>
-        <div>Email</div>
-        <div><input type="email" class="mainLoginInput" placeholder="Enter Your Email"></div>
-        <br>
-        <div>Password</div>
-        <div><input type="password" class="mainLoginInput" placeholder="Enter Your Password"></div>
-            </div>
-            <div class="column">
-                <div>FUsername</div>
-        <div><input type="text" class="mainLoginInput" placeholder="Enter Your Username"></div>
-        <br>
-        <div>Phone Number</div>
-        <div><input type="email" class="mainLoginInput" placeholder="Enter Your Number"></div>
-        <br>
-        <div>Confirm Password</div>
-        <div><input type="password" class="mainLoginInput" placeholder="Confirm Your Password"></div></div>
-           
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form name="myForm" onsubmit="return (validate())">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" id="name">
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" id="username" >
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" id="email">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" id="phone_no" >
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" id="pass">
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" id="conpass">
+          </div>
         </div>
-        <div style="font-size: large;">Gender</div>
-        <br>
-        <div class="parent">
-            <div class="column"><input type="radio"> <label for="gender">Male</label></div>
-            <div class="column"><input type="radio" name="" id=""><label for="gender">Female</label></div>
-            <div class="column"><input type="radio" name="" id=""><label for="gender">Prefer not to say</label></div>
-
+        <div class="gender-details">
+          <input type="radio" name="gender" id="radio1">
+          <input type="radio" name="gender" id="radio2">
+          <input type="radio" name="gender" id="radio3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="radio1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="radio2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="radio3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
         </div>
-        <br>
-        <button type="submit" class="block">Register</button>
-
-
-</div>
-</div>
-</div>
-
-
-
+        <div class="button" >
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="validation.js">
+</script>
 </body>
 </html>

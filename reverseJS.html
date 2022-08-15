@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ReverseString</title>
+</head>
+<body>
+    <P id="reverse"> HOLA AMIGOS!! </P>
+    <button onclick="ReverseString()">CLICK TO REVERSE</button>
+    <script>
+        function ReverseString() {
+
+            var text= document.getElementById("reverse").innerHTML;
+           
+            const revArray = [];
+           
+            const length = text.length - 1;
+             
+            for(let i = length; i >= 0; i--) {
+                revArray.push(text[i]);
+            }
+            var result= revArray.join('');
+            document.write(result);
+        }      
+        </script>
+</body>
+</html>
