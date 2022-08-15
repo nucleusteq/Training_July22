@@ -15,16 +15,16 @@ public class ItemService {
 	List<Item> items = new ArrayList<>();
 	
 	{
-		items.add(new Item(1, "Pepsi", 20.0, "Pepsi is a carbonated soft drink manufactured by PepsiCo.",10));
-		items.add(new Item(2, "Maza", 15.0, "Maaza is a Coca-Cola fruit drink brand from India ",10));
-		items.add(new Item(3, "Sprite", 40.0, "Sprite is a colorless, lemon and lime-flavored soft drink created by The Coca-Cola Company.",10));
-		items.add(new Item(4, "Munch", 10.0, "Munch is an indulgent combination of crunchy wafer, creamy filling and a delicious chocolate coating which take your taste buds to another level.",10));
-		items.add(new Item(5, "Dairy Milk", 20.0, "Dairy products are generally defined as food products that are produced from milk. ",10));
-		items.add(new Item(6, "Silk", 80.0, "Silk is known for its beautiful drape and absorbent nature.",10));
-		items.add(new Item(7, "Fanta", 50.0, "Fanta is a brand of fruit-flavored carbonated soft drinks created by Coca-Cola Deutschland under the leadership of German businessman Max Keith.",10));
-		items.add(new Item(8, "Perk", 10.0, "Perk is a combination of crisp wafer and delicious Cadbury chocolate that enlivens the mood and sparks the lighter side of life. ",10));
-		items.add(new Item(9, "Water Bottle", 30.0, "A water bottle is a container that is used to hold liquids.",10));
-		items.add(new Item(10, "Milky Bar", 20.0, " It is a white chocolate confection produced by Nestlé since 1936 and sold worldwide. ",10));
+		items.add(new Item(1, "ThumbsUp", 20.0, "Thumbsup taste the thunder",10));
+		items.add(new Item(2, "DairyMilk ", 20.0, "Brand Cadbury",10));
+		items.add(new Item(3, "kitkat", 40.0, "have a kitkat break",10));
+		items.add(new Item(4, "Munch", 10.0, "sweet",10));
+		items.add(new Item(5, "GoodDay", 20.0, "Have a GoodDay",10));
+		items.add(new Item(6, "Silk", 80.0, "Smooth And Silky",10));
+		items.add(new Item(7, "Fanta", 50.0, "Fantastic Fanta",10));
+		items.add(new Item(8, "Perk", 10.0, "Perk",10));
+		items.add(new Item(9, "Water Bottle", 30.0, "Stay Hydrated",10));
+		items.add(new Item(10, "Milky Bar", 20.0, "Milky Bar",10));
 	}
 	
 	public List<Item> getAllItems() {
