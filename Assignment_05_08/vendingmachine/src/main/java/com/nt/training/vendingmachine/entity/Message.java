@@ -2,15 +2,15 @@ package com.nt.training.vendingmachine.entity;
 
 public class Message {
 	
-	Item item;
+	private Item item;
 	
-	String message;
+	private String message;
 	
-	Double inputAmount;
+	private Double inputAmount;
 	
-	Double returnAmount;
+	private Double returnAmount;
 	
-	Double itemPrice;
+	private Double itemPrice;
 
 	public Item getItem() {
 		return item;

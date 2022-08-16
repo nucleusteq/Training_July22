@@ -2,7 +2,7 @@ package com.nt.training.vendingmachine.entity;
 
 public class Input {
 	
-	Integer id;
+	private Integer id;
 	
 	Double inputPrice;
 
