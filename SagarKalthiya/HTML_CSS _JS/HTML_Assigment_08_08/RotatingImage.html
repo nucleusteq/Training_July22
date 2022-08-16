@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rotating </title>
+    <style>
+        body {
+            text-align: center;
+            padding: 100px 0 0 0;
+            color: #fff;
+            background: #1d1f20;
+        }
+
+        #loading {
+            -webkit-animation: rotation 2s infinite linear;
+        }
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid blue;
+            border-bottom: 16px solid blue;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+    </style>
+
+<script>
+    function ReverseString(str) {
+        if(!str || str.length < 2 ||
+                typeof str!== 'string') {
+            return 'Not valid';
+        }
+        const revArray = [];
+        const length = str.length - 1;
+     
+
+        for(let i = length; i >= 0; i--) {
+            revArray.push(str[i]);
+        }
+        
+        return revArray.join('');
+    }
+    document.write("Hello I am Reverse String => ")
+    document.write(ReverseString("Hello I am Reverse String"))
+    </script>
+
+
+</head>
+
+<body>
+
+    <h2 id="loading" class="loader"></h2>
+    <img id="loading" src="http://www.vitorazevedo.net/external_files/loading_small.png">
+</body>
+
+</html>
