@@ -30,7 +30,7 @@ public class TeacherServiceImpl implements TeacherService {
 	@Override
 	public String removeTeacher(int id) {
 		if(id<0) {
-			return "Not a valid value";
+			return "Invalid ID";
 		}
 		return teacherRepository.removeTeacher(id);
 	}
@@ -38,7 +38,7 @@ public class TeacherServiceImpl implements TeacherService {
 	@Override
 	public String updateTeacher(int id, Teacher teacher) {
 		if(id <= 0 || id != teacher.getId()) {
-			return "Teacher id is invalid";
+			return "Invalid ID";
 		}
 		return teacherRepository.updateTeacher(id, teacher);
 	}
