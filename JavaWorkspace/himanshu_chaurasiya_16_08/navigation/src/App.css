@@ -1,0 +1,38 @@
+.main-nav{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 15px;
+  height: 60px;
+  background-color: grey;
+  border: 2px black solid;
+}
+
+#home,#about,#users{
+  margin-left: 40px;
+  color: black;
+  border: 0.10rem black solid;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#home:hover,#about:hover,#users:hover{
+  background-color: blue;
+  box-shadow: 2px 2px;
+}
+
+#home:focus,#about:focus,#users:focus{
+  background-color: brown;
+  box-shadow: 2px 2px;
+}
+
+
+.para{
+  border: 0.10rem black solid;
+  text-align: center;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 376px){
+.main-nav{font-size: 20px;}
+}
