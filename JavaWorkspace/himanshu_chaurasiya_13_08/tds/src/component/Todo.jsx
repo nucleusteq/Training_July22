@@ -4,10 +4,11 @@ import "./todo.css";
 
 function Todo() {
   const [todos, setTodos] = useState([]);
-  const [changedtodos, setChangedTodos] = useState([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [status] = useState("New");
+  const [state,setState] = useState("All");
+
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -23,25 +24,14 @@ function Todo() {
       readStatus: status,
     };
     setTodos([...todos].concat(currentTodo));
-    setChangedTodos([...todos].concat(currentTodo));
     setTitle("");
     setDescription("");
   }
 
-  function handleChange(val) {
-    if (val === "All") {
-      // setTodos(todos);
-      setChangedTodos(todos);
-    } else {
-      const updatedTodos = [...todos].filter((todo) => todo.readStatus === val);
-      setChangedTodos(updatedTodos);
-    }
-  }
-
-  return (
+   return (
     <div className="todo-main">
       <div className="dropdown">
-        <select onChange={(e) => handleChange(e.target.value)}>
+        <select onChange={(e) => setState(e.target.value)}>
           <option value="All">All</option>
           <option value="New">New</option>
           <option value="Done">Done</option>
@@ -68,7 +58,9 @@ function Todo() {
       </form>
 
       <div>
-        <TodoList todos={changedtodos} setTodos={setChangedTodos} />
+        {/* <TodoList todos={todos} setTodos={setTodos} filter={()=>{[...todos].filter((todo) => todo.readStatus === state)}}/> */}
+        <TodoList todos={state ==="All" ? todos : [...todos].filter((todo) => todo.readStatus === state)} setTodos={setTodos}/>
+  
       </div>
     </div>
   );
