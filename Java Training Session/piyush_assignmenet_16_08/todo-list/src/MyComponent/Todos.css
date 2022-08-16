@@ -1,0 +1,56 @@
+.dropdown select {
+    height: 10%;
+    width: 10%;
+    align-items: center;
+}
+
+.inputs input {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 30px;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 17px;
+}
+#sub-but{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    font-style: Arial;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: grey;
+}
+h3{
+    background-color: bisque;
+}
+#check-but {
+    font-size: 20px;
+    padding: 5px;
+    width: 70px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    opacity: 90%;
+    box-shadow: 2px 2px black;
+    color: blue;
+}
+#delte-but{
+    font-size: 20px;
+    padding: 5px ;
+    width: 70px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    opacity: 90%;
+    /* background-color: transparent; */
+    color: red;
+    box-shadow: 2px 2px black;
+}
