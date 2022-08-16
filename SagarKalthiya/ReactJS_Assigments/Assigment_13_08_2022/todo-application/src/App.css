@@ -1,0 +1,160 @@
+:root {
+  --background-gradient: linear-gradient(20deg, #fff 30%, #BB86FC, #f39c12 , #616161);
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+}
+
+.App .openModalBtn {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.btn-group button {
+  background-color: cornflowerblue; /* Green background */
+  border: 1px solid rgb(30, 61, 120); /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: rgb(74, 77, 233);
+}
+
+
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+/* Other styles*/
+body {
+  color: #fff;
+  background: var(--background-gradient);
+}
+h1 {
+  margin: 0 0 0.25em;
+}
+a {
+  font-weight: bold;
+  color: var(--gray);
+  text-decoration: none;
+  padding: .25em;
+  border-radius: .25em;
+  background: white;
+}
+
+
+.delete {
+  position: absolute;
+  top: 6px;
+  right: 20px;
+  padding: 4px 10px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+
+.button-one {
+  background: #edf000; /* background color */
+}
+.button-two {
+  background: cornflowerblue;
+}
+.button-three {
+  background: #27c9b8;
+}
+.button-one,
+.button-two,
+.button-three {
+  color: #1d1d1d; /* text color */
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px 18px; /* space around text */
+  text-transform: uppercase; /* all capital letters */
+  font-weight: 700;
+  height: 50px;
+  letter-spacing: 1px;
+  -moz-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid rgb(30, 61, 120); 
+  background-color: cornflowerblue; /* Green background */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer/hand icon */
+}
+.button-one:hover,
+.button-two:hover,
+.button-three:hover {
+  background-color: rgb(74, 77, 233);
+}
