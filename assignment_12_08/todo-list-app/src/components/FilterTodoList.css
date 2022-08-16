@@ -1,0 +1,20 @@
+.filterContainer{
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.filterContainer select{
+    width: 300px;
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+    width: 90%;
+}
+.filterContainer button{
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: white;
+}
