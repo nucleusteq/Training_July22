@@ -51,12 +51,16 @@ h3 {
 
 }
 #check-but {
-    font-size: 15px;
+    font-size: 25px;
     padding: 5px ;
-    width: 100px;
+    width: 60px;
     display: inline-block;
     margin-bottom: 10px;
     border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: green;
 }
 
 #check-but:hover{
@@ -67,6 +71,23 @@ h3 {
 
 
 
-#ouput-block{
+#delte-but{
+    font-size: 25px;
+    padding: 5px ;
+    width: 60px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: red;
+}
+
+#delte-but:hover{
+    background-color: darkturquoise;
+    opacity: 90%;
+    box-shadow: 2px 2px black;
 
 }

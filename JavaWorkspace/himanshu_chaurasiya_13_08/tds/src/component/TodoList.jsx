@@ -1,17 +1,34 @@
 import React from "react";
 import "./todo.css";
 
+
+
 function TodoList(props) {
+
+  function handleDelete(val){
+    const tempTodo = [...props.todos].filter((todo)=>{
+      return todo.id !== val 
+    })
+    props.setTodos(tempTodo)
+  }
+
   return (
     <div className="ouput-block">
       {props.todos.map((todo) => (
-        <div>
-          <h3>
-            {todo.Title} : {todo.Description} : {todo.readStatus}
-          </h3>
+        <div key={todo.id}>
+
+            <h3>
+              {todo.Title} : {todo.Description} : {todo.readStatus}
+            </h3>
+
+            <button id="delte-but"
+              type="submit"
+              onClick={()=>handleDelete(todo.id)}
+            ><i className="fa fa-trash"></i>
+            </button>
+
             <button id="check-but"
               type="submit"
-              key={todo.id}
               onClick={() => {
                 const updatedTodos = [...props.todos].map((newTodo) => {
                   if (newTodo.id === todo.id) {
@@ -28,9 +45,9 @@ function TodoList(props) {
                 props.setTodos(updatedTodos);
               }}
             >
-              Check
+              <i className="fa fa-check"></i>
             </button>
-          
+
         </div>
       ))}
     </div>
