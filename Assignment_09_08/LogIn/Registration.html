@@ -6,6 +6,93 @@
     
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="style.css">
+     <script>
+      function validation(x){
+
+        switch(x){
+          case 'fullName' : validateFullName(x)
+          break;
+          case 'email' : validateEmail(x)
+          break;
+          case 'password' : validatePassword(x)
+          break;
+          case 'phoneNumber' : validatePhoneNumber(x)
+          break;
+          case 'confirmPassword' : confirmPassword(x)
+          break;
+          case 'userName' : validateUserName(x)
+          break;
+        }
+
+        function validateFullName(x){      
+        let fullName=document.getElementById(x).value;
+        if(fullName.length<5){
+          document.getElementById(x).style.borderColor='red';
+        document.getElementById('input-box1').setAttribute('data-error', 'length should be greater than 5');
+        }else{
+          document.getElementById(x).style.borderColor='green';
+          document.getElementById('input-box1').removeAttribute('data-error');
+        }
+      }
+
+      function validateEmail(x){
+        let email=document.getElementById(x).value;
+        if (email.length>15){
+        document.getElementById(x).style.borderColor='red';
+        document.getElementById('input-box2').setAttribute('data-error', 'email should be greater than 15');
+        }else{
+          document.getElementById(x).style.borderColor='green';
+          document.getElementById('input-box2').removeAttribute('data-error');
+        }    
+      }
+
+      function validatePassword(x){
+        let password=document.getElementById(x).value;
+        if (password.length<6){
+        document.getElementById(x).style.borderColor='red';
+        document.getElementById('input-box3').setAttribute('data-error', 'password should be less than 6');
+        }else{
+          document.getElementById(x).style.borderColor='green';
+          document.getElementById('input-box3').removeAttribute('data-error');  
+        }
+      }
+      
+      function validatePhoneNumber(x){
+        let phoneNumber=document.getElementById(x).value;
+        if (phoneNumber.length!=10){
+        document.getElementById(x).style.borderColor='red';
+        document.getElementById('input-box5').setAttribute('data-error', 'length should not be greater than 10');
+        }else{
+          document.getElementById(x).style.borderColor='green';
+          document.getElementById('input-box5').removeAttribute('data-error'); 
+      }
+    }
+
+    function confirmPassword(x){
+      let confirmPassword=document.getElementById(x).value;
+      let password=document.getElementById('password').value;
+      if (confirmPassword!=password){
+        document.getElementById(x).style.borderColor='red';
+        document.getElementById('input-box6').setAttribute('data-error', 'length should be greater than 5');
+        }else{
+          document.getElementById(x).style.borderColor='green';
+          document.getElementById('input-box6').removeAttribute('data-error');
+      }
+    }
+
+    function validateUserName(x){
+      let userName=document.getElementById(x).value;
+      console.log(x);
+      if (userName.includes('-')){
+        document.getElementById(x).style.borderColor='red';
+        document.getElementById('input-box4').setAttribute('data-error', 'does not inclue -');
+        }else{
+          document.getElementById(x).style.borderColor='green';
+          document.getElementById('input-box4').removeAttribute('data-error');
+      }
+    }
+  }
+     </script>
    </head>
 <body>
   <div class="container">
@@ -13,29 +100,29 @@
     <div class="content">
       <form>
         <div class="user-details">
-          <div class="input-box">
+          <div class="input-box" data-error="" id ="input-box1">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter your name" required id="fullName" oninput="validation('fullName')">
           </div>
-          <div class="input-box">
+          <div class="input-box" data-error="" id="input-box4">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" placeholder="Enter your username" required id="userName" oninput="validation('userName')">
           </div>
-          <div class="input-box">
+          <div class="input-box" data-error="" id="input-box2">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your email" required id="email" oninput="validation('email')">
           </div>
-          <div class="input-box">
+          <div class="input-box" data-error="" id="input-box5">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" placeholder="Enter your number" required id="phoneNumber" oninput="validation('phoneNumber')">  
           </div>
-          <div class="input-box">
+          <div class="input-box" data-error="" id="input-box3">
             <span class="details">Password</span>
-            <input type="password" placeholder="Enter your password" required>
+            <input type="password" placeholder="Enter your password" required id="password" oninput="validation('password')">
           </div>
-          <div class="input-box">
+          <div class="input-box" data-error="" id="input-box6">
             <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <input type="text" placeholder="Confirm your password" required id="confirmPassword" oninput="validation('confirmPassword')">
           </div>
         </div>
         <div class="gender-details">
