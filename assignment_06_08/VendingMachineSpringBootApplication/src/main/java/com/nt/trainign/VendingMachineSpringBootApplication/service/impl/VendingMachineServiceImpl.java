@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.nt.trainign.VendingMachineSpringBootApplication.model.Product;
+import com.nt.trainign.VendingMachineSpringBootApplication.model.VendingMachineOutputModel;
 import com.nt.trainign.VendingMachineSpringBootApplication.repository.impl.VendingMachineRepositoryImpl;
 import com.nt.trainign.VendingMachineSpringBootApplication.service.VendingMachineService;
 
@@ -22,7 +23,7 @@ public class VendingMachineServiceImpl implements VendingMachineService {
 	}
 
 	@Override
-	public String sellProduct(int id, int money) {
+	public VendingMachineOutputModel sellProduct(int id, int money) {
 		
 		return vendingMachineRepository.sellProduct(id, money);
 	} 
