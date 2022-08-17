@@ -43,6 +43,7 @@ public class VendingMachineServiceImpl implements VendingMachineService{
 		int twenty=0;
 		int ten=0;
 		int five=0;
+		int quntity = 0;
 		String twnty="",tenrps="",coin="";
 		int rimAmount=userAmount-productDetails.getProductPrice();
 		while(rimAmount>0) {
@@ -78,7 +79,9 @@ public class VendingMachineServiceImpl implements VendingMachineService{
 				response.put("message", "Successfully getting Product");
 				response.put("denomination", denomination);
 				response.put("itemId", productDetails.getProductId());
-				response.put("price", productDetails.getProductPrice());	
+				response.put("price", productDetails.getProductPrice());
+				productDetails.setProductQuntity(productDetails.getProductQuntity()-1);
+				vendingMachineRepo.save(productDetails);
 			}else {
 				System.out.println("This Product is Sold Out");
 				response.put("message", "failure to getting Product");
