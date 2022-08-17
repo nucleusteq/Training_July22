@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color:#b3fff0;
+    width: 100%;
+}
+.container .box{
+    float: left;
+}
+#box1{
+    width: 30%;
+    font-size: 20px;
+   padding: 20px;
+}
+#box2{
+    width: 70%;
+    padding-right: 20px;
+}
+
+.container .box ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container .box ul li{
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container .box ul li span:hover{
+    border-bottom: 2px solid #ffbf80;
+}
+.navButtons{
+    text-decoration: none;
+    color: black;
+}
+#menuButton,#crossButton{
+    position: absolute;
+    top:15px;
+    right:15px;
+    display: none;
+}
+#dataContainer{
+    width: 100%;
+    padding:20px;
+    font-size:20px;
+    margin:auto;
+    background-color: #e6f7ff;
+}
+#data{
+    width: 100%;
+    padding:20px 20px 20px 0px;
+    font-size: 15px;
+}
+@media only screen and (max-width: 650px) {
+    #box1{
+        width: 35%;
+        font-size: 20px;
+       padding: 12px;
+    }
+    #box2{
+        width: 65%;
+    }
+    .container .box ul li{
+        padding: 6px;
+        margin: 8px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .container .box{
+        float: none;
+    }
+    #box1{
+        width: 100%;
+        font-size: 15px;
+       padding: 15px;
+    }
+    #box2{
+        background-color:#00e6e6;
+        width: 100%;
+        display: none;
+    }
+    .container .box ul{
+        flex-direction: column;
+    }
+    #menuButton{
+        display: block;
+    }
+}
