@@ -1,0 +1,50 @@
+
+@keyframes r {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes r1 {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .roatate_me {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 100%;
+    top: 20%;
+    left: 45%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    border: 1px solid #ccc;
+  
+    animation-name: r;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .roatate_me img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    animation-name: r1;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }

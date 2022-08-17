@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+  background-color: black;
+}
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.Navbar{
+  top: 0; left: 0; right: 0;
+  height: 70px;
+  z-index: 1000;
+
+}
+
+.navv{
+  display: flex;
+}
+
+.Navbar .navv #home{
+  background-image: linear-gradient(#D8BFD8,#d8a5ce,#dab3d5 );
+  text-align: center;
+  font-size: larger;
+  color: #000;
+  line-height: 70px;
+  flex: 1;
+  font-weight: 1000;
+
+}
+
+.Navbar .navv #about{
+  background-image: linear-gradient(#b56a9c,#b27293,#975782 );
+  line-height: 70px;
+  text-align: center;
+  font-size: larger;
+  color: #000;
+  font-weight: 1000;
+  flex: 1;
+
+}
+
+.Navbar .navv #user{
+  background-image: linear-gradient(#ad4492,#a13f8d,#a24696 );
+  line-height: 70px;
+  text-align: center;
+  font-size: larger;
+  color: #000;
+  flex: 1;
+  font-weight: 1000;
+
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.route-div{
+  padding-left: 40%;
+  padding-top: 2%;
+  font-size: large;
+  display: flex;
+}
+
+.homeoutput h2{
+  /* padding-left: 80%; */
+  /* width: 100%; */
+  display: flex;
+  text-align: center;
+
+}
+
+.aboutoutput h2{
+  padding-left: 550px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+
+}
+
+.useroutput h2{
+  padding-left: 550px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+
+}
