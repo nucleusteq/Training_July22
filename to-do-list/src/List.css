@@ -1,0 +1,26 @@
+.Task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 464px;
+    height: 25px;
+    border: 4px solid crimson;
+    border-radius: 1%;
+    padding: 10px;
+    background-image: linear-gradient(#ffe4b5,	#eee8aa,#ffdab9);
+}
+
+.Task p{
+    margin: 0;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+.Task button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 2px;
+
+}
