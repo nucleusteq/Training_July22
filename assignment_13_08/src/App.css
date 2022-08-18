@@ -1,0 +1,21 @@
+.todo-app{
+    text-align: center;
+    margin-top: 5%;
+    border: 10px solid;
+    border-color: rgb(50, 40, 97);
+    border-width: 40px;
+    border-style: solid;
+    width: 50%;
+    margin-left: 25%;
+    background-image: linear-gradient(20deg, #713dcb, #23add3);
+    
+  }
+  
+  .todo-app h2{
+    background-image: linear-gradient(20deg, #18e499, #19bc7b);
+    border-radius: 40px;
+    width: 40%;
+    height: 20%;
+    margin-left: 29%;
+    font-size: 30px;
+  }
