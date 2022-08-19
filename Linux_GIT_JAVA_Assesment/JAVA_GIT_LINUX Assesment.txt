@@ -1,0 +1,68 @@
+1.Linux
+1.1 . Answer- chmod 770 financial_report.txt
+	The above command will specify the access to the people of of group that is within thee company where 7 means that the user can read write and modify the file.
+
+1.2 For reading the file we can the "cat" command, for writing purpose they can use editors like nano,vi ,vim(latest version), to save the modification they can use ":wq!"to save and exit the file.
+
+1.3 To share the file to the vendor we can use SSH(Secure Shell) 
+	using secure file transfer protocol)
+	sftp other_company_user>@10.23.43.242
+	on entering the password the connection will be established.
+	the we can uset sftp>cd to direct to that directory and then sftp>put financial_report.txt
+
+1.4 a) -rw-r--r-x    1 rahul finance 2345 Jul 27 12:94 financial_report.txt
+	"-" specify that it is a file .
+	"rw-" - specify that the root user has the permission to read and write the file.
+	"-r--" - specify that the groups can only read this file.
+	"r-x" - specify that others can read the file and can also execute it.
+	
+	b) drwxr--rwx 1 rahul finance 4096 Jul 27 10:94 finance
+		"dr" - specify that this is a directory.
+		"wxr" - specify that the root user can read , write and execute as well.
+		"r--" -  specify that the groups can only read it.
+		"rwx" - specify that others can read , write and execute as well.
+
+1.5
+	a)777 - read write and execute to all.
+	b)647 - read write to root user , read only to group , read write execute to all.
+	c)660 -read write to both root user and group , no permission to others
+	d)475 - read to root user, read write and execute to the  group , read and execute to others.
+
+1.6 
+	a)Change Directory - cd
+	b) remove file and directory - rm filename / rm directory / rm -r to remove a non empty directory
+	c)rename a file and directory - mv <name> <newname>
+
+3.JAVA
+	
+ class Custormer{
+	String Customer_Name,membership; 
+	int Price ;
+	
+	
+	public String setcustomerName(String Customer_Name){
+		this.Customer_Name=Customer_Name;
+	}
+	public void getcustomerName(){
+		return Customer_Name;
+	}
+	public int setPrice(String Price){
+		this.Price=Price;
+	}
+	public void getcustomerName(){
+		return Customer_Name;
+	}
+	public String setMembership(String membership){
+		this.membership=membership;
+	}
+		
+}
+class Discount extends Customer{
+	public int discount(String membership){
+		if(membership=="Premium"){
+			System.out.println ("You are a gold member,we have a 25% discount for you");
+			System.out.println("Your final price is : "+ Price)
+		}
+	}
+}
+
