@@ -1,0 +1,12 @@
+
+.first-div,.second-div,.third-div,.fourth-div{
+  text-align: center;
+}
+
+
+.first-div{
+  background-color: bisque;
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 20px;
+}
