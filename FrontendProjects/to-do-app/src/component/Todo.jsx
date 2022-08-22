@@ -7,7 +7,7 @@ function Todo() {
   const [description, setDescription] = useState("");
   const [status] = useState("New");
   const [state,setState] = useState("All");
-  function handleSubmit(e) {
+  function handleSub(e) {
     e.preventDefault();
     if (title.length === 0 || description.length === 0) {
       return alert("Please Enter Details..");
@@ -34,7 +34,7 @@ function Todo() {
             <option value="Done">Done</option>
         </select>
         </div>
-        <form onSubmit={handleSubmit} className="inputs">
+        <form onSubmit={handleSub} className="inputs">
         <input
             id="small-input"
             type="text"
