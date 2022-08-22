@@ -10,7 +10,7 @@ function Todo() {
   function handleSubmit(e) {
     e.preventDefault();
     if (title.length === 0 || description.length === 0) {
-      return alert("Please Enter Details in both fields");
+      return alert("Please Enter Details..");
     }
     const currentTodo = {
       id: new Date().getTime(),
@@ -40,13 +40,13 @@ function Todo() {
             type="text"
             onChange={(e) => setTitle(e.target.value)}
             value={title}
-            placeholder="Enter Title"
+            placeholder="Enter The Title"
         />
         <input
             type="text"
             onChange={(e) => setDescription(e.target.value)}
             value={description}
-            placeholder="Enter Description"
+            placeholder="Enter The Description"
         />
         <button id="sub-but" type="submit">
             Submit
