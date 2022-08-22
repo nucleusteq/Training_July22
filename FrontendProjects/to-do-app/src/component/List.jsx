@@ -5,7 +5,7 @@ import "./todo.css";
 
 function List(props) {
 
-  function handleDelete(val){
+  function handleDel(val){
     const tempTodo = [...props.todos].filter((todo)=>{
       return todo.id !== val 
     })
@@ -22,7 +22,7 @@ function List(props) {
             </h3>
             <button id="check-but"
               type="submit"
-              onClick={()=>handleDelete(todo.id)}
+              onClick={()=>handleDel(todo.id)}
             ><i className="fa fa-times"></i>
             </button>
 
