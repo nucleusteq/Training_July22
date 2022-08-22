@@ -18,7 +18,7 @@ function List(props) {
         <div>
         <div key={todo.id}>
             <h3>
-              {todo.Title} : {todo.Description} : {todo.readStatus}
+              {todo.Title} :: {todo.Description} :: {todo.readStatus}
             </h3>
             <button id="check-but"
               type="submit"
