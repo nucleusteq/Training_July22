@@ -1,0 +1,93 @@
+.dropdown select {
+    height: 4%;
+    width: 10%;
+}
+.dropdown :hover {
+    background-color: grey;
+}
+
+.inputs input {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 30px;
+    border-style: dashed;
+    border-width: 2px;
+    font-size: 17px;
+}
+
+#small-input{
+    width: 20%;
+}
+
+#sub-but{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+  
+#sub-but:hover{
+    background-color: yellow;
+    box-shadow: 2px 2px gray
+  }
+
+
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+    display: inline-block;
+    text-align: left;
+    text-indent: 10px;
+    margin:5px;
+    margin-right: 5px;
+    width: 80%;
+    background-color: firebrick;
+    border-radius: 20px;
+
+}
+#check-but {
+    font-size: 25px;
+    padding: 5px ;
+    width: 60px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: green;
+}
+
+#check-but:hover{
+    background-color: darkturquoise;
+    opacity: 90%;
+    box-shadow: 2px 2px black;
+}
+
+
+
+#delte-but{
+    font-size: 25px;
+    padding: 5px ;
+    width: 60px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: red;
+}
+
+#delte-but:hover{
+    background-color: darkturquoise;
+    opacity: 90%;
+    box-shadow: 2px 2px black;
+
+}

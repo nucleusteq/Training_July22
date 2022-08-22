@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="studentCon" class="com.spring.SpringConstructor.StudentConstructor">
+		<constructor-arg name="id" value="72"></constructor-arg>
+		<constructor-arg name="name" value="Constrcutor_name"></constructor-arg>
+	</bean>
+
+
+</beans>
+   
+   
+   

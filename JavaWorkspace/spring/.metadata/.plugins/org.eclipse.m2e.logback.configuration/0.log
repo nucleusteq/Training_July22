@@ -1,0 +1,25 @@
+2022-08-05 23:59:08,110 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-08-06 00:00:02,646 [Worker-13: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.spring:SpringExample:0.0.1-SNAPSHOT @ C:\Users\opera\OneDrive\Desktop\Training_July22\SpringAll\Spring\pom.xml.
+2022-08-06 00:00:02,875 [Worker-13: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.nt.training:nucleusteqspringmvc:0.0.1-SNAPSHOT @ C:\Users\opera\OneDrive\Desktop\Training_July22\SpringAll\SpringMVC\pom.xml.
+2022-08-06 00:00:02,924 [Worker-13: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.nt.training:SpringAnnotations:0.0.1-SNAPSHOT @ C:\Users\opera\OneDrive\Desktop\Training_July22\SpringAll\SpringAnnotation\pom.xml.
+2022-08-06 00:00:04,428 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringAnnotations/src/main/java
+2022-08-06 00:00:04,429 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringAnnotations/src/test/java
+2022-08-06 00:00:04,501 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringExample/src/main/java
+2022-08-06 00:00:04,501 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringExample/src/main/resources
+2022-08-06 00:00:04,502 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringExample/src/test/java
+2022-08-06 00:00:04,556 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /nucleusteqspringmvc/src/main/java
+2022-08-06 00:00:04,557 [Worker-13: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /nucleusteqspringmvc/src/test/java
+2022-08-06 00:00:05,228 [Worker-13: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 3 project(s) in 3 sec
+2022-08-06 00:00:06,266 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 00:00:06,268 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\opera\OneDrive\Desktop\Training_July22\SpringAll\SpringAnnotation\src\main\resources
+2022-08-06 00:00:06,270 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 00:00:06,272 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\opera\OneDrive\Desktop\Training_July22\SpringAll\SpringAnnotation\src\test\resources
+2022-08-06 00:00:06,616 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 00:00:06,623 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2022-08-06 00:00:06,655 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 00:00:06,657 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\opera\OneDrive\Desktop\Training_July22\SpringAll\Spring\src\test\resources
+2022-08-06 00:00:07,090 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 00:00:07,092 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\opera\OneDrive\Desktop\Training_July22\SpringAll\SpringMVC\src\main\resources
+2022-08-06 00:00:07,093 [Worker-19: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-06 00:00:07,095 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\opera\OneDrive\Desktop\Training_July22\SpringAll\SpringMVC\src\test\resources
+2022-08-06 00:01:06,688 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myScript.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <style>
+        body {
+            background-image: linear-gradient(80deg, #71b7e6, #9b59b6);
+        }
+
+        #container {
+            padding: 20px;
+            width: 600px;
+            height: 500px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-family: 'Poppins';
+            font-size: 28px;
+            border-radius: 10px;
+        }
+
+        #re_under {
+            border-bottom: 3px solid;
+            border-image: linear-gradient(80deg, #71b7e6, #9b59b6)1;
+        }
+
+        .col {
+            width: 275px;
+            height: 300px;
+            float: left;
+        }
+
+        #col1 {
+            margin-right: 50px;
+        }
+
+        .col input {
+            border: 1px solid #bbb7b7;
+            ;
+            border-style: outset;
+            box-sizing: 25;
+            height: 35px;
+            border-radius: 10px;
+
+        }
+
+        .col:after {
+            clear: both;
+        }
+
+        #form_work {
+            padding-top: 15px;
+            font-size: 17px;
+        }
+
+        #form_work .col input,
+        label {
+            display: block;
+            width: 95%;
+            padding-bottom: 5px;
+            margin-top: 1px;
+            margin-bottom: 8px;
+        }
+
+        #gender_id span {
+            padding-top: 20px;
+            margin-right: 60px;
+            font-size: 15px;
+        }
+
+        #but {
+            margin-top: 35px;
+            background-image: linear-gradient(80deg, #71b7e6, #9b59b6);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <span id="re_under">Re</span>gistration
+        <div id="form_work">
+            <form>
+                <div id="col1" class="col">
+                    <label for="fname">Full Name</label>
+                    <input type="text" name="fname" placeholder="Enter your name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <label for="password">Password</label>
+                    <input id="pass" type="password" name="password" placeholder="Enter your password">
+                </div>
+                <div id="col2" class="col">
+                    <label for="uname">User Name</label>
+                    <input type="text" name="uname" placeholder="Enter your user name">
+                    <label for="pnumber">Phone Number</label>
+                    <input id="valid" type="text" name="pnumber" placeholder="Enter your Phone Number">
+                    <label for="Confirm_password">Confirm Password</label>
+                    <input id="conf_pass" type="password" name="Confirm_password"
+                        placeholder="Enter your Confirm password">
+                </div>
+                <div id="gender_id">Gender<br>
+                    <span><input type="radio" name="gender" value="male">Male</span>
+                    <span><input type="radio" name="gender" value="female">Female</span>
+                    <span><input type="radio" name="gender" value="female">Prefer not to say</span>
+                </div>
+                <button id="but" type="button" onclick="check_num()">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

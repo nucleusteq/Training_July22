@@ -1,0 +1,8 @@
+
+1. pwd -> to check the path of current directory
+2. touch financial_report.txt -> to make the file in that directory.
+3. ls -l financial_report.txt -> to check what permission the current file has.
+4. chmod 665 financial_report.txt -> to change its permission so 
+									that now a group also can have read and write permission
+									
+5. ls -l -> to check the correct permission for the file is set or not.

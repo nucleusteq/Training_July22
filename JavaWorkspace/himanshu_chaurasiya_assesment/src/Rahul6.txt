@@ -1,0 +1,7 @@
+Task - change directory, remove file and directory, rename file and directory
+
+
+cd directory_path 	-> to change change directory 
+rm file_path 		-> to remove file 
+rm -r directory_path -> to remove folder
+mv (source_name) (changed_name) -> to rename

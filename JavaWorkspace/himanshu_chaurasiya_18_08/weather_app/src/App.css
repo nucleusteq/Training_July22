@@ -1,0 +1,31 @@
+.main-app-div{
+  text-align:  center;
+  margin: 10%;
+  border: black 3px solid;
+  width: 30%;
+  margin-left: 35%;
+  /* background-color: aquamarine; */
+}
+
+#heading{
+  background-color: rgb(123, 33, 159);
+  height: 32px;
+  border-radius: 5px;
+  width: 80%;
+  margin-left: 8%;
+}
+
+.input-div{
+  width: 14%;
+  position: absolute;
+  height: 12%;
+  margin-left: 1%;
+  margin-top: 0.35%;
+  border-right: 2px red solid;
+}
+
+.temp-div{
+  margin-left: 40%;
+  color: chartreuse;
+}
+

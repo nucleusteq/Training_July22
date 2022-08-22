@@ -1,0 +1,6 @@
+File modes-->
+ --> 777- user group and other are having full access
+ --> 647- owner can read /write , group can read , others have full acces
+ --> 660- owner/group can read /write , others have no access
+ --> 475- Owner can read. Group can read/write/execute. Other can read/execute
+
