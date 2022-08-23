@@ -68,7 +68,7 @@ function App() {
       <div className="third-div">
 
         <button className="glow-on-hover" onClick={() => {setBuyProductFlag(true);setPurchasedProductFlag(false);setAddProductFlag(false)} }>Buy</button>
-        <button className="glow-on-hover" onClick={() => {setAddProductFlag(true);setBuyProductFlag(false)} }>Add</button>
+        <button className="glow-on-hover" onClick={() => {setAddProductFlag(true);setPurchasedProductFlag(false);setBuyProductFlag(false)} }>Add</button>
 
         {buyproductflag && (
           <div>

@@ -85,6 +85,14 @@ function ProductDetails(props) {
         <h2>Purchase Details</h2>
       </div>
 
+      {/* <div>
+      {
+        props.val.denomination.map((item)=>{
+          return <div>{item.denomKey} x {item.denomValue}</div>
+        })
+      }
+      </div> */}
+
       <div>
         {
         props.val.snackId !== null
@@ -95,13 +103,23 @@ function ProductDetails(props) {
             props.val.snack +
             " | " +
             props.val.description
-
-          :
+          : 
           (props.val.status !== null
           ? props.val.status
           : "")
         }
       </div>
+
+        {props.val.denomination.length>0 && <div>
+            Denomination :
+            {
+            props.val.denomination.map((item)=>{
+                return ` INR ${item.denomKey} x ${item.denomValue} |`
+              })
+            }
+        </div>
+        }
+
 
     </div>
   );
