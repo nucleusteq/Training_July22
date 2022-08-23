@@ -1,0 +1,20 @@
+.containerAddToDoList{
+    background-color:  #ccf5ff;
+   text-align: left;
+   width: 97%;
+   height: 250px;
+   padding: 10px 3px 10px 10px;
+   
+}
+.containerAddToDoList label,input,textarea{
+    display: block;
+    width: 90%;
+    margin: 5px 0px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Merriweather';
+}
+.containerAddToDoList button{
+    font-family: 'Merriweather';
+}

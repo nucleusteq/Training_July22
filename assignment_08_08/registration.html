@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+
+    <style>
+        body{
+            background: linear-gradient(to right,#71b7e6 , #9b59b6 );
+        }
+        .container{
+            background-color:white;
+            width: 600px;
+            height: 450px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 10px;
+            padding: 25px;
+            font-size: 25px;
+            font-family: 'Poppins';
+        }
+        #re_underline{
+            border-bottom: 3px solid;
+            border-image: linear-gradient(to right,#71b7e6 , #9b59b6) 1;
+        }
+
+        .column{
+            float: left;
+            width: 275px;
+            font-size: 15px;
+        }
+        .column:after {
+            clear: both;
+        }
+        #part1{
+            margin: 10px 15px 10px 0px;
+        }
+        #part2{
+            margin: 10px;
+            padding-left: 10px;
+        }
+
+        #formContent .column label{
+            display: inline-block;
+            margin-top: 10px;
+            font-family: 'Poppins';
+            font-weight: 500;
+        }
+        #formContent .column input{
+            padding: 10px;
+            border-radius: 5px;
+            width: 95%;
+            display: inline-block;
+            border: 1px solid #e6e6e6;
+            border-style: outset;
+            font-family: 'Poppins';
+            font-weight: 500;
+            color:#999999;
+        }
+        #gender{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        #gender input,label{
+            font-size: 15px;
+            margin-top: 15px;
+        }
+        #gender input{
+            accent-color: #9b59b6;
+            border: none;
+        }
+        #gender label{
+            margin-right: 90px;
+        }
+        input[type=submit]{
+            margin-top: 40px;
+            width: 100%;
+            font-size: 20px;
+            padding:5px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Poppins';
+            background:linear-gradient(to right,#71b7e6 , #9b59b6 ) ;
+            color: white;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background:linear-gradient(to right,#9b59b6 , #71b7e6 );
+            transition-delay: 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><span id="re_underline">Re</span>gistration
+        <div id="formContent">
+            <form>
+                <div class="column" id="part1">
+                   <label for="fullName">Full Name</label>
+                   <input type="text" placeholder="Enter your name" name="fullName">
+
+                   <label for="email">Email</label><br>
+                   <input type="email" placeholder="Enter your email" name="email"><br>
+
+                   <label for="password">Password</label><br>
+                   <input type="password" placeholder="Enter your password" name="password"><br>
+
+                </div>
+                <div class="column" id="part2">
+                    <label for="userName">User Name</label><br>
+                   <input type="text" placeholder="Enter your user name" name="userName"><br>
+
+                   <label for="phoneNumber">Phone Number</label><br>
+                   <input type="email" placeholder="Enter your phone number" name="phoneNumber"><br>
+
+                   <label for="confirmPassword">Confirm Password</label><br>
+                   <input type="password"placeholder="Enter your password" name="confirmPassword"><br>
+                </div>
+                <div id="gender">Gender
+                    <div>
+                    <input type="radio" name="gender">
+                    <label for="gender">Male</label>
+
+                    <input type="radio" name="gender">
+                    <label for="gender">Female</label>
+
+                    <input type="radio" name="gender">
+                    <label for="gender">Prefer not to say</label>
+                    </div>    
+                </div>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

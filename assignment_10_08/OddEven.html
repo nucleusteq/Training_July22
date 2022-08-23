@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd Even Number</title>
+    <script>
+        function oddEven(){
+            let x=document.getElementById('inputNumber').value;
+            if((x%2) === 0){
+                   document.getElementById('answer').innerHTML="Even Number"; 
+            }
+            else{
+                console.log(x%2);
+                document.getElementById('answer').innerHTML="Odd Number"; 
+            }
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <form >
+        <label  for="inputNumber">Enter Any Number</label>
+        <input type="text" name="inputNumber" id="inputNumber">
+        <span onclick="oddEven();" style="border:1px solid black ; padding:2px;">Submit</span>
+    </form>
+    <div id="answer">
+
+    </div>
+</body>
+</html>

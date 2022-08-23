@@ -1,0 +1,158 @@
+body{
+    background: linear-gradient(to right,#71b7e6 , #9b59b6 );
+}
+.container{
+    background-color:white;
+    width: 600px;
+    height: 550px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    padding: 25px;
+    font-size: 25px;
+    font-family: 'Poppins';
+}
+#re_underline{
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right,#71b7e6 , #9b59b6) 1;
+}
+
+.column{
+    float: left;
+    width: 275px;
+    font-size: 15px;
+}
+.column:after {
+    clear: both;
+}
+#part1{
+    margin: 10px 15px 10px 0px;
+}
+#part2{
+    margin: 10px;
+    padding-left: 10px;
+}
+
+#formContent .column label{
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+#formContent .column .input-container input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 95%;
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    border-style: outset;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color:#999999;
+    margin: 10px 0px;
+}
+#gender{
+    font-size: 18px;
+    font-weight: 500;
+}
+.gender-input-container{
+    display: inline;
+
+}
+
+#gender input,label{
+    font-size: 15px;
+    margin-top: 15px;
+}
+#gender input{
+    accent-color: #9b59b6;
+    border: none;
+}
+#gender label{
+    margin-right: 90px;
+}
+input[type=submit]{
+    margin-top: 40px;
+    width: 100%;
+    font-size: 20px;
+    padding:5px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    background:linear-gradient(to right,#71b7e6 , #9b59b6 ) ;
+    color: white;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background:linear-gradient(to right,#9b59b6 , #71b7e6 );
+    transition-delay: 5s;
+}
+
+/* .input-container{
+   
+
+} */
+.input-container::after{
+    content: attr(data-error);
+    color: red;
+    font-size: 12px;
+    margin: 8px 0px;
+}
+
+@media only screen and (max-width: 650px) {
+    .container{
+        width: 500px;
+        height: 500px;
+        padding: 18px;
+        font-size: 20px;
+
+    }
+    .column{
+        float: left;
+        width: 225px;
+        font-size: 12px;
+    }
+    #formContent .column .input-container input{
+        padding: 8px;
+    }
+    #gender label{
+        margin-right: 60px;
+    }
+    input[type=submit]{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 18px;
+        padding:5px;
+    }
+    .input-container::after{
+        margin: 5px 0px;
+        font-size: 10px;   
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .container{
+        width: 90%;
+        height: auto;
+        position: relative;
+    }
+    .column{
+        float: none;
+        width: 100%;
+    }
+    #part1{
+        margin: 10px 15px 10px 0px;
+    }
+    #part2{
+        margin: 10px 15px 10px 0px;
+        padding-left: 0px;
+    }
+    .gender-input-container{
+        display: block;
+    
+    }
+}
