@@ -1,4 +1,4 @@
 function reverseString(str) {
-    return str;
+    return str.split("").reverse().join("");
 }
-reverseString("Manam");
+reverseString("hello");
