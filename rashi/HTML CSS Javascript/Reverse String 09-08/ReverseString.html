@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ReverseString.js"></script>
+
+    <script>
+        function ReverseString(str) {
+            if(!str || str.length < 2 ||
+                    typeof str!== 'string') {
+                return 'Not valid';
+            }
+            const revArray = [];
+            const length = str.length - 1;
+         
+
+            for(let i = length; i >= 0; i--) {
+                revArray.push(str[i]);
+            }
+            
+            return revArray.join('');
+        }
+        document.write(ReverseString("Hello Nucleus teq"))
+        </script>
+        
+</head>
+<body>
+</body>
+</html>
