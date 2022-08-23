@@ -27,19 +27,20 @@ public void setUp() {
 
 @Test
 public void test1() {
+	value=4;
 	assertEquals("10",addvalues.add(value));
 }
 
 @Test
 public void test2() {
 	value=0;
-	assertEquals("Value should not be zero",addvalues.add(value));
+	assertEquals("Number cannot be zero",addvalues.add(value));
 }
 
 @Test
 public void test3() {
 	value= -3;
-	assertEquals("Value should not be less than 1",addvalues.add(value));
+	assertEquals("Value should not be less than zero",addvalues.add(value));
 }
 
 @After
