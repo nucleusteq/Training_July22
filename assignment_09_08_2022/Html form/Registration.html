@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        let y = document.forms["myForm"]["user_name"].value
+        let z = document.forms["myForm"]["Email"].value
+        let a = document.forms["myForm"]["Phone_Number"].value
+        let b = document.forms["myForm"]["Password"].value
+        let c = document.forms["myForm"]["Confirm_Password"].value
+        var password = document.forms["myForm"]["Password"].value;
+        var number = document.forms["myForm"]["Phone_Number"].value;
+        var regx = /[6-9]\d{9}/;
+        if(regx.test(number))
+        {
+            alert("number is valid")
+        }
+        else{
+          alert("number is not valid")
+        }
+        
+        if (/^([a-zA-Z0-9]+)$/.test(password) && /\d/.test(password) &&
+    /[A-Z]/i.test(password)) {
+    alert("Password is correct");
+}
+else{
+    alert("Wrong password");
+  }
+ 
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+        if (y == "") {
+          alert("Username must be filled out");
+          return false;
+        }
+        if (z == "") {
+          alert("Email must be filled out");
+          return false;
+        }
+        if (a == "") {
+          alert("Phone Number must be filled out");
+          return false;
+        }
+        if (b == "") {
+          alert("Password must be filled out");
+          return false;
+        }
+        if (c == "") {
+          alert("Confirm Password must be filled out");
+          return false;
+        }
+      }
+
+    
+
+      </script>
+   
+    </head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+
+
+
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="fname">
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" name ="user_name" >
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name = "Email">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" placeholder="Enter your number" name = "Phone_Number">
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="Password" placeholder="Enter your password" name = "Password">
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="Password" placeholder="Confirm your password" name = "Confirm_Password">
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1"  required>
+          <input type="radio" name="gender" id="dot-2"  required>
+          <input type="radio" name="gender" id="dot-3"  required>
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <a href="file:///C:/Users/opera_ao6omsd/OneDrive/Desktop/welcome.html">
+            <input type="submit" value="Register"/>
+          </a>
+            
+          
+  
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
